@@ -117,7 +117,7 @@ fn rules_panel() -> Markup {
 fn discord_panel() -> Markup {
     html! {
         section.panel.fade.js-scroll-anim #discord data-anim = "fade" {
-            iframe.js-delay-attr style = "width: 100%; height: 400px;" allowtransparency="true" frameborder = "0" data-attr = "src" data-attr-value = "https://discordapp.com/widget?id=395654171422097420&theme=light" {}
+            iframe.js-delay-attr style = "width: 100%; height: 400px;" allowtransparency="true" frameborder = "0" data-attr = "src" data-attr-value = "https://discord.com/widget?id=1117019996380479518&theme=dark" {}
             p {
                 (tr("discord-panel-info"))
             }

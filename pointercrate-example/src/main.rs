@@ -114,7 +114,7 @@ async fn rocket() -> _ {
         // Tab where users can modify their own accounts
         .with_page(ProfileTab)
         // Tab where users can initiate player claims and manage their claimed players
-        .with_page(ListIntegrationTab("https://discord.gg/tMBzYP77ag"))
+        .with_page(ListIntegrationTab("https://discord.gg/aR8BmktE5M"))
         // Tab where website moderators can manage permissions. 
         // The vector below specified which permissions a user needs to have for the tab to be displayed.
         .with_page(UsersTab(vec![MODERATOR, LIST_ADMINISTRATOR]))
@@ -190,11 +190,11 @@ fn page_configuration() -> PageConfiguration {
     // displayed below it, side-by-side, and potentially some social media links to
     // your team
     let footer = Footer::new(html! {
-        "© Copyright <year> <your website>"
+        "© Copyright 2025 turklist.com.tr"
         br;
         "All rights reserved"
         br;
-        "<your website> and <your demonlist> are in no way affiliated with RobTopGamesAB ® or pointercrate.com"
+        "turklist.com.tr and turklist are in no way affiliated with RobTopGamesAB ® or pointercrate.com"
     })
     // Add a column with links for various list-related highlights
     .with_column(FooterColumn::LinkList {
@@ -215,9 +215,9 @@ fn page_configuration() -> PageConfiguration {
     .with_link("https://twitter.com/stadust1971", tr("footer-tweet.developer"));
 
     // Stitching it all together into a page configuration
-    PageConfiguration::new("<your website name here>", nav_bar, footer)
+    PageConfiguration::new("turklist", nav_bar, footer)
         // Used for the HTML "author" meta tag
-        .author("your name")
+        .author("gorgun08, yuri")
         // Used for the HTML "keywords" meta tag
-        .keywords("Your SEO keywords here")
+        .keywords("turklist, trlist, hardest levels beaten in turkey, turklist.com.tr, turklist.com")
 }
