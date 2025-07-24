@@ -1,15 +1,12 @@
+// rahhhhhhhhhhhhhhhhhhhhh
+
 use std::collections::{HashMap, HashSet};
-use std::net::{IpAddr, Ipv4Addr};
 use std::str::FromStr;
-use std::{any::Any, path::Path};
+use std::{path::Path};
 use std::fs;
 use pointercrate_demonlist::player::DatabasePlayer;
-use pointercrate_demonlist::record::{FullRecord, RecordStatus};
-use pointercrate_demonlist::submitter::Submitter;
 use serde::Deserialize;
 use anyhow::{Result};
-use pointercrate_demonlist::{demon::Demon};
-use sqlx::pool::PoolConnection;
 use sqlx::types::ipnetwork::IpNetwork;
 use sqlx::PgPool;
 
@@ -37,7 +34,6 @@ struct TSLRecord {
     user: String,
     link: Option<String>,
     percent: i16,
-    hz: IntOrString, // dont ask why.
 }
 
 struct TSLDemonWithFileAndPosition {
@@ -67,7 +63,7 @@ fn import_tsl_data<P: AsRef<Path>>(dir: P) -> Result<TSLData> {
                 continue;
             }
             if path.file_name().and_then(|f| f.to_str()) == Some("_editors.json") {
-                // todo: process _editors.json
+                // ignore
                 continue;
             }
             if path.file_name().and_then(|f| f.to_str()) == Some("_packlist.json") {
@@ -118,7 +114,7 @@ async fn main() -> Result<()> {
     let pool = PgPool::connect("postgres://pointercrate:pointercrate@localhost:5432/pointercrate").await?;
     let mut conn = pool.acquire().await?;
 
-    let inserted_submitter = sqlx::query!(
+    let _ = sqlx::query!(
                             "INSERT INTO submitters (submitter_id, ip_address, banned) \
                             VALUES ($1, $2, $3) ON CONFLICT (submitter_id) DO NOTHING RETURNING submitter_id",
                             2,
@@ -142,7 +138,7 @@ async fn main() -> Result<()> {
         .await?;
 
         if existing_demon.is_some() {
-            println!("⏭️ Skipping {}: already exists in database", tsl.name);
+            println!("⏭️ Skipping {} with the level id of {:?}: already exists in database", tsl.name, tsl.id);
             continue;
         }
 
@@ -159,12 +155,12 @@ async fn main() -> Result<()> {
 
         match FullDemon::create_from(post_demon, &mut *conn).await {
             Ok(demon) => {
-                println!("✅ Inserted: {} at position {}", demon.demon.base.name, demon.demon.base.position);
+                println!("✅ Inserted: {} at position {} with the level id of {:?}", demon.demon.base.name, demon.demon.base.position, demon.demon.level_id);
                 if let Some(records) = &tsl.records {
                     for record in records {
                         let player = DatabasePlayer::by_name_or_create(&record.user, &mut conn).await.unwrap();
 
-                        let inserted_id = sqlx::query!(
+                        let _ = sqlx::query!(
                             "INSERT INTO records (progress, status_, player, submitter, demon, video, raw_footage) \
                             VALUES ($1, $2::text::record_status, $3, $4, $5, $6, $7) RETURNING id",
                             record.percent,
@@ -181,7 +177,7 @@ async fn main() -> Result<()> {
                     }
                 }
             },
-            Err(e) => eprintln!("❌ Failed to insert {} at {}: {}", tsl.name, demon.position, e),
+            Err(e) => eprintln!("❌ Failed to insert {} at {} with the level id of {:?}: {}", tsl.name, demon.position, tsl.id, e),
         }
     }
 
