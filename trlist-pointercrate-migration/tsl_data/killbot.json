@@ -1,0 +1,23 @@
+{
+    "id": 38754426,
+    "name": "Killbot",
+    "author": "Lithifusion",
+    "creators": ["Lithifusion"],
+    "verifier": "Yarkii",
+    "verification": "https://youtu.be/dou1B2hio_Q",
+    "percentToQualify": 60,
+    "records": [
+        {
+            "user": "WaxySs",
+            "link": "https://youtu.be/yIpC2zqv738",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "muixie",
+            "link": "https://youtu.be/W3dgD-2vsWg",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

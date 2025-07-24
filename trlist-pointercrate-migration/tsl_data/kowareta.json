@@ -1,0 +1,17 @@
+{
+    "id": 46763581,
+    "name": "kowareta",
+    "author": "Gablor",
+    "creators": ["Gablor", "Endlevel", "Minaxa"],
+    "verifier": "youngs6",
+    "verification": "https://youtu.be/HqxTL2yxUC8",
+    "percentToQualify": 55,
+    "records": [
+           {
+            "user": "Pikonom",
+            "link": "https://www.youtube.com/watch?v=v8MY4q2oi98",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+} 

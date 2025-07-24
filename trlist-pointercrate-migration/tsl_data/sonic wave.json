@@ -1,0 +1,23 @@
+{
+    "id": 26681070,
+    "name": "Sonic Wave",
+    "author": "lSunix",
+    "creators": ["Cyclic"],
+    "verifier": "Pikonom",
+    "verification": "https://www.youtube.com/watch?v=XVpj7P_JNXM",
+    "percentToQualify": 65,
+    "records": [
+        {
+            "user": "Keremino",
+            "link": "https://youtu.be/hr_oN8aAJBY?si=yzTAxeqHS0wtHv3T",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Draconis",
+            "link": "https://www.youtube.com/watch?v=-RNeOap2Owo&t=39s",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": 73289291,
+    "name": "Delirium Tremens",
+    "author": "Vadi", 
+    "creators": ["Vadi"],
+    "verifier": "Vulyne",
+    "verification": "https://youtu.be/bFe4Xcu3qsc",
+    "percentToQualify": 100,
+    "records": [
+        {
+            "user": "TheCirclesGuy",
+            "link": "https://youtu.be/QEwivj7fp24?si=sJ4XFvij1l-bVQog",
+            "percent": 100,
+            "hz": 60
+        }
+    ]
+}

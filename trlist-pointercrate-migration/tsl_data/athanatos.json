@@ -1,0 +1,23 @@
+{
+    "id": 26133601,
+    "name": "Athanatos",
+    "author": "llExenityll",
+    "creators": ["llExenityll"],
+    "verifier": "meaty",
+    "verification": "https://youtu.be/SSIeMUBiaQI",
+    "percentToQualify": 66,
+    "records": [
+        {
+            "user": "Holojen",
+            "link": "https://www.youtube.com/watch?v=P4hi2ijppT4&ab_channel=GDHolojen",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Keremino",
+            "link": "https://youtu.be/gfQYFN_nU-k?si=XhZuAocZi3UfECKh",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

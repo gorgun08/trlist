@@ -1,0 +1,23 @@
+{
+    "id": 57520174,
+    "name": "Artifice",
+    "author": "f3lixsram",
+    "creators": ["f3lixsram", "nahuel2998", "GiaMmiX", "rafer", "victorinoxX", "Pennutoh", "JacobROso", "DesTicY", "Thomartin", "EnZore", "Erdyuri", "Marwec", "Desumari", "OSIRIS GD", "kurokawa", "ChaSe", "AngryBoy0644", "Yakimaru", "Darwin", "Reunomi"],
+    "verifier": "quadra33",
+    "verification": "https://youtu.be/sLd266gJuoY",
+    "percentToQualify": 52,
+    "records": [
+        {
+            "user": "Yarkii",
+            "link": "https://youtu.be/kvTaHu1Ltgs",
+            "percent": 100,
+            "hz": 480
+        },
+        {
+            "user": "Holojen",
+            "link": "https://youtu.be/Qk3lcZA3pO4",
+            "percent": 100,
+            "hz": 288
+        }
+    ]
+}

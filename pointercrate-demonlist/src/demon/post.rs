@@ -20,6 +20,30 @@ pub struct PostDemon {
     level_id: Option<i64>,
 }
 
+impl PostDemon {
+    pub fn new(
+        name: String,
+        position: i16,
+        requirement: i16,
+        verifier: String,
+        publisher: String,
+        creators: Vec<String>,
+        video: Option<String>,
+        level_id: Option<i64>,
+    ) -> Self {
+        PostDemon {
+            name,
+            position,
+            requirement,
+            verifier,
+            publisher,
+            creators,
+            video,
+            level_id,
+        }
+    }
+}
+
 impl FullDemon {
     /// Must be run within a transaction!
     pub async fn create_from(data: PostDemon, connection: &mut PgConnection) -> Result<FullDemon> {

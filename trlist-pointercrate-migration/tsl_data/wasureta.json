@@ -1,0 +1,23 @@
+{
+    "id": 64658786,
+    "name": "Wasureta",
+    "author": "HelpegasuS",
+    "creators": ["LimeTime313", "Deadlox", "HelpegasuS", "augi", "Isane", "XLSpiral", "Splash", "Belonzik", "crazen", "El3ctr0"],
+    "verifier": "EvoPot",
+    "verification": "https://www.youtube.com/watch?v=tiMG6i-qawE&ab_channel=EvoPot",
+    "percentToQualify": 58,
+    "records": [
+        {
+            "user": "Evvolin",
+            "link": "https://youtu.be/yBdIteDyQfI",
+            "percent": 100,
+            "hz": 165
+        },
+        {
+            "user": "muixie",
+            "link": "https://www.youtube.com/watch?v=cd91Zfz0vWw",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

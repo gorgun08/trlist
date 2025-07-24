@@ -1,0 +1,17 @@
+{
+    "id": 60726930,
+    "name": "HURRICANE",
+    "author": "BIANOX",
+    "creators": ["BIANOX"],
+    "verifier": "Evvolin",
+    "verification": "https://youtu.be/Q5TZR2mTH6U",
+    "percentToQualify": 75,
+    "records": [
+        {
+            "user": "Vulyne",
+            "link": "https://youtu.be/W0aKKDdGpIo?si=L1Vqm1XTgYb-2wJR",
+            "percent": 100,
+            "hz": "240/360"
+        }
+    ]
+}

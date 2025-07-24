@@ -1,0 +1,29 @@
+{
+    "id": 62214792,
+    "name": "Helios",
+    "author": "Canonlaw",
+    "creators": ["Canonlaw"],
+    "verifier": "quadra33",
+    "verification": "https://www.youtube.com/watch?v=IvAhOgk6uOM",
+    "percentToQualify": 100,
+    "records": [
+        {
+            "user": "RD24GD",
+            "link": "https://www.youtube.com/watch?v=ItK65iJlUXo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Pisagor",
+            "link": "https://youtu.be/D5OgdrdQzZ4",
+            "percent": 100,
+            "hz": 144
+        },
+        {
+            "user": "NuroxW",
+            "link": "https://youtu.be/lVU8_iTNkgw",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

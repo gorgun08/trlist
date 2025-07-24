@@ -1,0 +1,17 @@
+{
+    "id": 56779294,
+    "name":"Wavebreaker",
+    "author":"Lemons",
+    "creators": ["Lemons"],
+    "verifier": "sillywilly",
+    "verification": "https://www.youtube.com/watch?v=RUwxqARUywk",
+    "percentToQualify": 49,
+    "records": [
+        {
+            "user": "ToasterFishe",
+            "link": "https://youtu.be/zoWQuNTNgvY",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "id": 10565740,
+    "name": "Bloodbath",
+    "author": "Riot",
+    "creators": ["Giron", "weoweoteo", "Vermillion", "Michigun", "Evasium", "Crack", "Asonicmen", "Etzer", "Havok", "Riot", "Ggb0y"],
+    "verifier": "quadra33",
+    "verification": "https://youtu.be/Espxk3nj8js",
+    "percentToQualify": 70,
+    "records": [
+        {
+            "user": "Yarkii",
+            "link": "https://youtu.be/isqR37RbW80?list=PLnkbZgFP0hg9DV80khywkzD24uyUeTE-n",
+            "percent": 100,
+            "hz": 300
+        },
+        {
+            "user": "youngs6",
+            "link": "https://youtu.be/ulzXuUxcjtk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "meaty",
+            "link": "https://youtu.be/tntj1Sig1f8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "WaxySs",
+            "link": "https://youtu.be/XIerFXyUGv4",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Pikonom",
+            "link": "https://youtu.be/2WRQswb8bbo",
+            "percent": 100,
+            "hz": 165
+        },
+        {
+            "user": "muixie",
+            "link": "https://youtu.be/BJJsnD-XmGg",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Keremino",
+            "link": "https://youtu.be/Lcoh0psQ_uw?si=ebn0tOwE8emqNXOn",
+            "percent": 100,
+            "hz": 480
+        },
+        {
+            "user": "sillywilly",
+            "link": "https://www.youtube.com/watch?v=6hlT_x5zeq8&t=6s",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Holojen",
+            "link": "https://www.youtube.com/watch?v=O1LX6YpvMnE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "WeGuysAreMad",
+            "link": "https://youtu.be/BIxxmOplGJA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Cukel31",
+            "link": "https://youtu.be/heIP-Z7Vywc",
+            "percent": 73,
+            "hz": 360
+        },
+        {
+            "user": "Fare",
+            "link": "https://www.youtube.com/watch?v=OutxDOW1XUs",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "NuroxW",
+            "link": "https://youtu.be/F-tK_kb85SM",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Moai chan",
+            "link": "https://youtu.be/yZrR3Z7fGCE?si=E0_fsyOZBvA1QMDh",
+            "percent": 100,
+            "hz": 120
+        },
+        {
+            "user": "u_chr",
+            "link": "https://www.youtube.com/watch?v=0L42I-clKZo",
+            "percent": 100,
+            "hz": "330/240"
+        }
+    ]
+}

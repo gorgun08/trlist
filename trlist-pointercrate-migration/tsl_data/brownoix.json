@@ -1,0 +1,17 @@
+{
+    "id": 82148336,
+    "name": "BROWNOIX",
+    "author": "ArtaxFerSarh",
+    "creators": ["ArtaxFerSarh", "StarkyTheSalad", "IvashkaUA", "OuroiX", "fufafac", "nectaroso", "DoliaX"],
+    "verifier": "LYuri",
+    "verification": "https://youtu.be/62-jaRZTXBM",
+    "percentToQualify": 100,
+    "records": [
+        {
+            "user": "Evvolin",
+            "link": "https://www.youtube.com/watch?v=nv0cJ3tohcE",
+            "percent": 100,
+            "hz": 165
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": 91251360,
+    "name": "Frozen Cave",
+    "password": "060521",
+    "author": "TrueParadoxTeam",
+    "creators": ["TyakyoFyai", "Aqualime", "Vornickon", "AlexOris", "FlashWings576", "DimaCrut", "Sleynt", "Quicklen"],
+    "verifier": "Holojen",
+    "verification": "https://www.youtube.com/watch?v=CD0OvUJleLc&ab_channel=GDHolojen",
+    "percentToQualify": 55,
+    "records": [
+        {
+            "user": "youngs6",
+            "link": "https://youtu.be/sdglkqbocP4",
+            "percent": 100,
+            "hz": "360"
+        }
+    ]
+}

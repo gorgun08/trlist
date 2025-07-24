@@ -1,0 +1,17 @@
+{
+    "id": 62551239,
+    "name": "Sigma Interface",
+    "author": "Platnuu",
+    "creators": ["TeslaX", "Platnuu"],
+    "verifier": "Holojen",
+    "verification": "https://youtu.be/iHc0J9z9mPg",
+    "percentToQualify": 57,
+    "records": [
+        {
+            "user": "RD24GD",
+            "link": "https://youtu.be/K4MF_5BQ690",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

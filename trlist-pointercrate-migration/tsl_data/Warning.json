@@ -1,0 +1,17 @@
+{
+    "id": 72414148,
+    "name": "Warning",
+    "author": "TwisterDude161",
+    "creators": ["TwisterDude161"],
+    "verifier": "MArmada",
+    "verification": "https://www.youtube.com/watch?v=1oI4UKyGejY",
+    "percentToQualify": 63,
+    "records": [
+        {
+            "user": "WaxySs",
+            "link": "https://youtu.be/OSeEaVJwMiY",
+            "percent": 100,
+            "hz": 300
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "id": 59899374,
+    "name": "Prismatic Haze",
+    "author": "Cirtrax",
+    "creators": ["Cirtrax"],
+    "verifier": "youngs6",
+    "verification": "https://www.youtube.com/watch?v=0cKiOap2o7k",
+    "percentToQualify": 64,
+    "records": [
+        {
+            "user": "Evvolin",
+            "link": "https://youtu.be/XYVzjZQ5F-I",
+            "percent": 100,
+            "hz": 165
+        },
+        {
+            "user": "idkidk29804",
+            "link": "https://www.youtube.com/watch?v=rzuvf48TJmo",
+            "percent": 100,
+            "hz": 480
+        },
+        {
+            "user": "Holojen",
+            "link": "https://youtu.be/IMYbCmCLvRs",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

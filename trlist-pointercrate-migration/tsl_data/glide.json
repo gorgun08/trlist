@@ -1,0 +1,17 @@
+{
+    "id": 55184818,
+    "name": "Glide",
+    "author": "crohn44",
+    "creators": ["crohn44"],
+    "verifier": "Holojen",
+    "verification": "https://www.youtube.com/watch?v=axbW_e0wtYc",
+    "percentToQualify": 58,
+    "records": [
+        {
+            "user": "WaxySs",
+            "link": "https://youtu.be/zZrTFpgnULk",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

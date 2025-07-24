@@ -1,0 +1,24 @@
+{
+    "id": 25610878,
+    "name": "8o X",
+    "author": "F3lixsram",
+    "creators": ["F3lixsram"],
+    "verifier": "youngs6",
+    "verification": "https://youtu.be/WCNnyWlTCTk",
+    "percentToQualify": 67,
+    "records": [
+        {
+            "user": "WaxySs",
+            "percent": 100,
+            
+            "hz": 165
+        },
+        {
+            "user": "Evvolin",
+            "link": "https://youtu.be/2vZRS2Yo-S8",
+            "percent": 100,
+            "hz": 165
+        }
+
+    ]
+}

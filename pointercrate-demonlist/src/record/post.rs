@@ -84,6 +84,29 @@ impl Submission {
     }
 }
 
+impl Submission {
+    pub fn new(
+        player: String,
+        demon: i32,
+        progress: i16,
+        video: Option<String>,
+        raw_footage: Option<String>,
+        status: RecordStatus,
+        note: Option<String>,
+    ) -> Self {
+        Submission {
+            progress,
+            player,
+            demon,
+            video,
+            raw_footage,
+            status,
+            note,
+        }
+    }
+}
+
+
 impl NormalizedSubmission {
     pub async fn verified_player_claim(&self, connection: &mut PgConnection) -> Result<Option<PlayerClaim>> {
         PlayerClaim::verified_claim_on(self.player.id, connection).await

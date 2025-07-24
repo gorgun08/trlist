@@ -148,6 +148,7 @@ async fn rocket() -> _ {
         .mount("/static/demonlist", FileServer::from("pointercrate-demonlist-pages/static"))
         .mount("/static/user", FileServer::from("pointercrate-user-pages/static"))
         .mount("/static/example", FileServer::from("pointercrate-example/static"))
+        .mount("/static/images", FileServer::from("pointercrate-example/static"))
 }
 
 /// Constructs a [`PageConfiguration`] for your site.
@@ -159,7 +160,7 @@ async fn rocket() -> _ {
 fn page_configuration() -> PageConfiguration {
     // Define a navigation bar with only two items, a link to the user account page,
     // and a link to your demonlist.
-    let nav_bar = NavigationBar::new("/static/images/path/to/your/logo.png")
+    let nav_bar = NavigationBar::new("./static/images/logo.png")
         .with_item(
             TopLevelNavigationBarItem::new(
                 Some("/demonlist/"),

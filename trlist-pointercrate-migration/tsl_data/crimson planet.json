@@ -1,0 +1,23 @@
+{
+    "id": 45866767,
+    "name": "Crimson Planet",
+    "author": "TrueOmega",
+    "creators": ["Metalface221", "TrueOmega", "TrusTa", "Terron", "Dz3ser", "YakobNugget", "MrPPs", "AimTheSame", "nikroplays", "Endlevel", "Zimnior12", "surreki" ],
+    "verifier": "Notar",
+    "verification": "https://www.youtube.com/watch?v=A8_HjS-SmJo",
+    "percentToQualify": 53,
+    "records": [
+        {
+            "user": "youngs6",
+            "link": "https://youtu.be/LGQNzO0AjTk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Keremino",
+            "link": "https://www.youtube.com/watch?v=D6vdqr5OyGg",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

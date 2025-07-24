@@ -1,0 +1,16 @@
+{
+    "id": 55985772,
+    "name": "Tech Manifestation",
+    "author": "Pleoslim",
+    "creators": ["Pleoslim", "MakFeed"],
+    "verifier": "GrainBoi",
+    "verification": "https://www.youtube.com/watch?v=Lmhxtz3yCX0",
+    "percentToQualify": 100,
+    "records": [
+         {
+        "user": "LightWorkk",
+        "link": "https://youtu.be/o_JDNlMwP5o",
+        "percent": 100,
+        "hz": "1200"
+    }]
+}

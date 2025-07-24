@@ -1,0 +1,17 @@
+{
+    "id": 54953085,
+    "name": "Thinking Space",
+    "author": "Atomic",
+    "creators": ["HidekiX"],
+    "verifier": "Notar",
+    "verification": "https://youtu.be/vnd88fvx4Ho",
+    "percentToQualify": 76,
+    "records": [
+        {
+            "user": "Keremino",
+            "link": "https://www.youtube.com/watch?v=C6_-jiaIBhA",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

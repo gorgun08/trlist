@@ -1,0 +1,17 @@
+{
+    "id": 71912451,
+    "name": "RUST",
+    "author": "neigefeu", 
+    "creators": ["neigefeu"],
+    "verifier": "rowinile",
+    "verification": "https://youtu.be/82rnpDKG45Q",
+    "percentToQualify": 58,
+    "records": [
+        {
+            "user": "Yarkii",
+            "link": "https://youtu.be/CDq4Oz-iJEs",
+            "percent": 100,
+            "hz": "120/420"
+        }
+    ]
+}   

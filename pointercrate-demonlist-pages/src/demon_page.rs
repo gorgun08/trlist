@@ -510,6 +510,7 @@ impl DemonPage {
 fn host(video: &str) -> &str {
     match Url::parse(video).unwrap().domain().unwrap() {
         "www.youtube.com" => "YouTube",
+        "youtu.be" => "YouTube",
         "www.twitch.tv" => "Twitch",
         "everyplay.com" => "Everyplay",
         "www.bilibili.com" => "Bilibili",

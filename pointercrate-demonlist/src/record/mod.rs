@@ -44,7 +44,7 @@ mod get;
 pub mod note;
 mod paginate;
 mod patch;
-mod post;
+pub mod post;
 
 #[derive(Debug, Eq, PartialEq, Clone, Copy, Hash, Default)]
 pub enum RecordStatus {

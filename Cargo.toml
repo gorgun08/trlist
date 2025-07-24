@@ -16,8 +16,8 @@ members = [
     "pointercrate-test",
 
     # Crate containing an example setup for a custom list
-    "pointercrate-example"
-]
+    "pointercrate-example",
+    "trlist-pointercrate-migration"]
 resolver = "2"
 
 [workspace.package]

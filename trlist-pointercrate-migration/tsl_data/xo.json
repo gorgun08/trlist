@@ -1,0 +1,17 @@
+{
+    "id": 58825144,
+    "name": "xo",
+    "author": "KrmaL",
+    "creators": ["KrmaL"],
+    "verifier": "Keremino",
+    "verification": "https://youtu.be/W_s2LYwOjB4?si=GhHR6Be09EsfBFeZ",
+    "percentToQualify": 51,
+    "records": [
+       {
+            "user": "Yaksis",
+            "link": "https://youtu.be/xf4JIV0oO4A",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

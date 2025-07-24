@@ -1,0 +1,29 @@
+{
+    "id": 62214792,
+    "name": "Azurite (by Sillow)",
+    "author": "Sillow",
+    "creators": ["Sillow"],
+    "verifier": "Vulyne",
+    "verification": "https://www.youtube.com/watch?v=uRe5VE-91HI",
+    "percentToQualify": 100,
+    "records": [
+        {
+            "user": "WaxySs",
+            "link": "",
+            "percent": 100,
+            "hz": 244
+        },
+        {
+            "user": "gorgun",
+            "link": "https://www.youtube.com/watch?v=xEeg_9sYp6M",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "NuroxW",
+            "link": "https://www.youtube.com/watch?v=dIKN8k2vcw0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "id": 69491632,
+    "name": "Crowd Control",
+    "author": "zDeadlox",
+    "creators": ["zDeadlox"],
+    "verifier": "MArmada",
+    "verification": "https://youtu.be/o2Y9VTd71i4",
+    "percentToQualify": 60,
+    "records": [
+        {
+            "user": "NuroxW",
+            "link": "https://youtu.be/lCKws5FnpIM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "asdfqwerguy",
+            "link": "https://www.youtube.com/watch?v=fXRCiiTdodM",
+            "percent": 100,
+            "hz": 240    
+        },
+        {
+            "user": "WeGuysAreMad",
+            "link": "https://youtu.be/K1S8-kPEEIU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

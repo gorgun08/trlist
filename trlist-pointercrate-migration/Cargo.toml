@@ -1,0 +1,17 @@
+[package]
+name = "trlist-pointercrate-migration"
+version = "0.1.0"
+authors.workspace = true
+description.workspace = true
+homepage.workspace = true
+edition.workspace = true
+repository.workspace = true
+
+[dependencies]
+anyhow = "1.0.98"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.141"
+pointercrate-demonlist = { path = "../pointercrate-demonlist" }
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.8", default-features = false, features = [ "runtime-tokio-native-tls", "macros", "postgres", "chrono", "migrate", "ipnetwork" ] }
+dotenvy = "0.15"

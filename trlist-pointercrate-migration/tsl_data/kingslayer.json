@@ -1,0 +1,36 @@
+{
+    "id": 84813026,
+    "name": "KINGSLAYER",
+    "author": "motheye",
+    "creators": ["motheye"],
+    "verifier": "Vulyne",
+    "verification": "https://www.youtube.com/watch?v=jpvBBeVg9Yk",
+    "percentToQualify": 66,
+    "records": [
+        {
+            "user": "WaxySs",
+            "percent": 100,
+            
+            "hz": 240
+        },
+        {
+            "user": "ccloudy",
+            "link": "https://www.youtube.com/watch?v=wqD2EWaCIa8",
+            "percent": 100,
+            "hz": 60
+        },
+        {
+            "user": "player71",
+            "link": "https://youtu.be/nLM6-qICjmk",
+            "percent": 100,
+            "hz": 144
+        },
+        {
+            "user": "muixie",
+            "link": "https://youtu.be/21xwQtcl0EU",
+            "percent": 100,
+            "hz": 240
+        }
+
+    ]
+}

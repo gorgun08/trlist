@@ -1,0 +1,59 @@
+{
+    "id": 62214792,
+    "name": "Cataclysm",
+    "author": "Ggb0y",
+    "creators": ["Ggb0y"],
+    "verifier": "Yarkii",
+    "verification": "https://youtu.be/WeccaiNCapQ",
+    "percentToQualify": 100,
+    "records": [
+        {
+            "user": "Holojen",
+            "link": "https://youtu.be/omU_LLKtVs8",
+            "percent": 100,
+            "hz": 144
+        },
+        {
+            "user": "youngs6",
+            "link": "https://youtu.be/UyCWMYJ7Tqg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Pikonom",
+            "link": "https://youtu.be/fovBuTIWFmw",
+            "percent": 100,
+            "hz": 165
+        },
+        {
+            "user": "RD24GD",
+            "link": "https://youtu.be/fANsXHJbRWo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "NuroxW",
+            "link": "https://www.youtube.com/watch?v=fyMlA8Y_A3Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "WaxySs",
+            "percent": 100,
+            
+            "hz": 165
+        },
+        {
+            "user": "Cukel31",
+            "link": "https://youtu.be/M7k_FLOD7ko",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "sillywilly",
+            "link": "https://www.youtube.com/watch?v=oBPLD_OO-Ec",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

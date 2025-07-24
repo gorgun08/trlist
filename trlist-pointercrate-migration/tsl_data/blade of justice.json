@@ -1,0 +1,41 @@
+{
+    "id": 91251360,
+    "name": "Blade of Justice",
+    "author": "LazerBlitz",
+    "creators": ["Panman", "Manix648 ve LazerBlitz"],
+    "verifier": "Holojen",
+    "verification": "https://www.youtube.com/watch?v=cblfAUG9U-I",
+    "percentToQualify": 58,
+    "records": [
+        {
+            "user": "quadra33",
+            "link": "https://youtu.be/tnRmqDdgJzI",
+            "percent": 100,
+            "hz": 144
+        },
+        {
+            "user": "ToasterFishe",
+            "link": "https://youtu.be/Nvc3Q4ORh68",
+            "percent": 100,
+            "hz": "240"
+        },
+        {
+            "user": "player71",
+            "link": "https://youtu.be/EsEtOHNrju8",
+            "percent": 100,
+            "hz": "144"
+        },
+        {
+            "user": "idkidk29804",
+            "link": "https://youtu.be/jWS5XgaDOkM",
+            "percent": 100,
+            "hz": "480"
+        },
+        {
+            "user": "muixie",
+            "link": "https://www.youtube.com/watch?v=SPEeBERTUIQ",
+            "percent": 100,
+            "hz": "240"
+        }
+    ]
+}

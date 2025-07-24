@@ -1,0 +1,29 @@
+{
+    "id": 68848817,
+    "name": "moment",
+    "author": "lexycat",
+    "creators": ["lexycat ve ICEDcave"],
+    "verifier": "LYuri",
+    "verification": "https://www.youtube.com/watch?v=Rwv8ONZqzHY",
+    "percentToQualify": 49,
+    "records": [
+        {
+            "user": "muixie",
+            "link": "https://www.youtube.com/watch?v=2M9jWt6YnuM",
+            "percent": 100,
+            "hz": "240"
+        },
+        {
+            "user": "player71",
+            "link": "https://www.youtube.com/watch?v=ywJPZdlFbUI",
+            "percent": 100,
+            "hz": "144"
+        },
+        {
+            "user": "Sayo",
+            "link": "https://youtu.be/_gV_vIAoo3E?si=dPw1BNgs7JiDbM4c",
+            "percent": 100,
+            "hz": "288"
+        }
+    ]
+}

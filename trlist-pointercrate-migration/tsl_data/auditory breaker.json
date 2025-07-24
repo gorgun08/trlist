@@ -1,0 +1,17 @@
+{
+    "id": 51791710,
+    "name": "Auditory Breaker",
+    "author": "LaserBlitz",
+    "creators": ["LaserBlitz","Cyclic","Manix648"],
+    "verifier": "Notar",
+    "verification": "https://youtu.be/vNhSvE3KFi4?si=s0n21KKHbLeszsdi",
+    "percentToQualify": 56,
+    "records": [
+           {
+            "user": "Draconis",
+            "link": "https://youtu.be/IHNcqg0S-7E",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

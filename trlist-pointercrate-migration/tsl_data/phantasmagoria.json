@@ -1,0 +1,17 @@
+{
+    "id": 76670086,
+    "name": "phantasmagoria",
+    "author": "whlt",
+    "creators": ["whlt"],
+    "verifier": "LYuri",
+    "verification": "https://www.youtube.com/watch?v=8scMqjDZpJc",
+    "percentToQualify": 100,
+    "records": [
+        {
+            "user": "Vulyne",
+            "link": "https://youtu.be/36GdHk8g79w?si=yoTzoJT15B8KLl_M",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}

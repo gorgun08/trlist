@@ -1,0 +1,17 @@
+{
+    "id": 20321297,
+    "name": "Heartbeat",
+    "author": "Krmal",
+    "creators": ["AncientAnubis", "Blaireswip", "KrmaL"],
+    "verifier": "muixie",
+    "verification": "https://youtu.be/FUkr1BNx46Y",
+    "percentToQualify": 100,
+    "records": [
+        {
+            "user": "player71",
+            "link": "https://www.youtube.com/watch?v=JTJ4MSeGOsc",
+            "percent": 100,
+            "hz": 144
+        }
+    ]
+}

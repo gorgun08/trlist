@@ -1,0 +1,19 @@
+{
+    "id": 596247,
+    "name": "Sunset Sandstorm",
+    "password": "596247",
+    "author": "crohn44",
+    "creators": ["crohn44"],
+    "verifier": "Yarkii",
+    "verification": "https://youtu.be/lWcozs-fVFg",
+    "percentToQualify": 39,
+    "records": [
+        {
+            "user": "Evvolin",
+            "link": "https://youtu.be/MOqUnKId4V0",
+            "percent": 100,
+            "hz": 165
+        }
+
+    ]
+}
