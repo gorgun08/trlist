@@ -1,15 +1,15 @@
 main-list = Main List
-    .info = The main section of the Demonlist. These demons are the hardest rated levels in the game. Records are accepted above a given threshold and award a large amount of points!
+    .info = Türklist'in ana kısmı. Bu kısım Türk oyuncular tarafından geçilen en zor 50 demonu kapsar. En fazla puanı bu kısımdaki kabul edilen rekorlar verir!
 
 extended-list = Extended List
-    .info = These are demons that dont qualify for the main section of the list, but are still of high relevance. Only 100% records are accepted for these demons! Note that non-100% that were submitted/approved before a demon fell off the main list will be retained.
+    .info = Bu kısım main liste giremeyen levelleri kapsar. Bu bölümde sadece 100% yapılan rekorlar kabul edilir! Level extendeda düşmeden önceki 100% altı rekorlar kalmaya devam edecektir.
 
 legacy-list = Legacy List
-    .info = These are demons that used to be on the list, but got pushed off as new demons were added. They are here for nostalgic reasons. This list is in no order whatsoever and will not be maintained any longer at all. This means no new records will be added for these demons.
+    .info = Bunlar zamanında listte olan ama yeni demonların eklenmesiyle listten düşen demonlar. Legacy demonlarına rekor atılamaz, arşiv amaçlı tutulurlar.
 
 demon-info = published by { $publisher }
-    .score = { $minimal-score } ({ $requirement }%) — { $total-score } (100%) points
-    .score-short = { $score } points
+    .score = { $minimal-score } ({ $requirement }%) — { $total-score } (100%) puan
+    .score-short = { $score } puan
 
 ## Time machine
 time-machine = Time Machine
@@ -28,8 +28,8 @@ time-machine = Time Machine
     .return = Go to present
 
 ## Sidebar panels
-editors-panel = List Editors
-    .info = Contact any of these people if you have problems with the list or want to see a specific thing changed.
+editors-panel = List Editörleri
+    .info = Listle ilgili herhangi bir probleminiz varsa, yada bir şeyin değiştirilmesini istiyorsanız bu kişilerle iletişime geçebilirsiniz.
 
 helpers-panel = List Helpers
     .info = Contact these people if you have any questions regarding why a specific record was rejected. Do not needlessly bug them about checking submissions though!

@@ -14,7 +14,7 @@ demon-objects = Nesne Sayısı
 
 demon-difficulty = Oyun İçi Zorluk
 
-demon-gdversion = Yapıldı
+demon-gdversion = Yapıldığı Versiyon
 
 demon-ngsong = Newgrounds Şarkısı
 
@@ -41,7 +41,7 @@ demon-requirement = Rekor gereksinimi
     .validator-valuemissing = Lütfen bir rekor gereksinimi belirtin
 
 demon-publisher = Yayınlayan
-    .validator-valuemissing = Lütfen bir yayınlayan belirtin
+    .validator-valuemissing = Lütfen bir publisher belirtin
 
 demon-verifier = Verifier
     .validator-valuemissing = Lütfen bir verifier belirtin
@@ -92,7 +92,7 @@ demon-records = Rekorlar
 
 demon-records-qualify = Kabul için {$percent}% { $percent ->
     [100] gerekli
-    *[other] veya daha iyisi gerekli
+    *[other] veya daha fazlası gerekli
 }
 
 demon-records-total = {$num-records} { $num-records ->
