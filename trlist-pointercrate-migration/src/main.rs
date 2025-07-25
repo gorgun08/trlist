@@ -11,13 +11,6 @@ use sqlx::types::ipnetwork::IpNetwork;
 use sqlx::PgPool;
 
 #[derive(Debug, Deserialize)]
-#[serde(untagged)]
-enum IntOrString {
-    Int(i16),
-    Str(String)
-}
-
-#[derive(Debug, Deserialize)]
 struct TSLDemon {
     id: i32,
     name: String,
