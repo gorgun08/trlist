@@ -31,7 +31,7 @@ impl IndividualStatsViewer {
                 a.button.white.hover.no-shadow href="/demonlist/statsviewer/"{
                     b {(tr("statsviewer-individual"))}
                 }
-                a.button.white.hover.no-shadow href="/demonlist/statsviewer/nations/" {
+                a.button.white.hover.no-shadow href="/demonlist/statsviewer/nations"{
                     b {(tr("statsviewer-nation"))}
                 }
             }

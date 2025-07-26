@@ -1,3 +1,6 @@
+// im too lazy to delete it
+// hehehehaw
+
 use crate::statsviewer::{stats_viewer_html, StatsViewerRow};
 use maud::{html, Markup};
 use pointercrate_core::localization::tr;
@@ -27,7 +30,7 @@ fn nation_based_stats_viewer_html() -> Markup {
             a.button.white.hover.no-shadow href="/demonlist/statsviewer/"{
                 b {(tr("statsviewer-individual"))}
             }
-            a.button.white.hover.no-shadow href="/demonlist/statsviewer/nations/" {
+            a.button.white.hover.no-shadow href="/demonlist/statsviewer/nations"{
                 b {(tr("statsviewer-nation"))}
             }
         }
