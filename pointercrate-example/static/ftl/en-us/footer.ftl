@@ -1,5 +1,5 @@
-footer-demonlist = Demonlist
-    .top-demon = Current Top Demon
+footer-demonlist = Türklist
+    .top-demon = Şuanki En Zor Demon
     .extended-list = { extended-list }
     .legacy-list = { legacy-list }
 

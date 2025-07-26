@@ -1,24 +1,24 @@
 statsviewer = Stats Viewer
-    .rank = Demonlist rank
-    .score = Demonlist score
-    .stats = Demonlist stats
-    .hardest = Hardest demon
+    .rank = Türklist rank
+    .score = Türklist score
+    .stats = Türklist statları
+    .hardest = En zor demon
 
-    .completed = Demons completed
-    .completed-main = Main list demons completed
-    .completed-extended = Extended list demons completed
-    .completed-legacy = Legacy list demons completed
+    .completed = Geçilen demonlar
+    .completed-main = Geçilen main list demonları
+    .completed-extended = geçilen extended list demonları
+    .completed-legacy = Geçilen legacy list demonları
 
-    .created = Demons created
-    .published = Demons published
-    .verified = Demons verified
-    .progress = Progress on
+    .created = Yapılan demonlar
+    .published = Yayınlanan demonlar
+    .verified = Verifylanan demonlar
+    .progress = Progressler
 
     .stats-value = { $main } Main, { $extended } Extended, { $legacy } Legacy
-    .value-none = None
+    .value-none = Yok
 
 statsviewer-individual = Individual
-    .welcome = Click on a player's name on the left to get started!
+    .welcome = İncelemeye başlamak için soldan bir oyuncunun ismine tıklayın!
 
     .option-international = International
 
@@ -52,15 +52,15 @@ demon-sorting-panel = Demon Sorting
 continent-panel = Continent
     .info = Select a continent below to focus the stats viewer to that continent. Select 'All' to reset selection.
 
-    .option-all = All
+    .option-all = Tümü
 
-    .option-asia = Asia
-    .option-europe = Europe
-    .option-australia = Australia
-    .option-africa = Africa
-    .option-northamerica = North America
-    .option-southamerica = South America
-    .option-centralamerica = Central America
+    .option-asia = Asya
+    .option-europe = Avrupa
+    .option-australia = Avustralya
+    .option-africa = Afrika
+    .option-northamerica = Kuzey Amerika
+    .option-southamerica = Güney Amerika
+    .option-centralamerica = Orta Amerika
 
 toggle-subdivision-panel = Show Subdivisions
     .info = Whether the map should display political subdivisions.

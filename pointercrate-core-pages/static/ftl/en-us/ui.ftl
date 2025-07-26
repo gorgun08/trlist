@@ -5,5 +5,5 @@ dropdown-placeholder = Click to select
 
 filtered-paginator-placeholder = Enter to search...
 
-paginator-previous = Previous
-paginator-next = Next
+paginator-previous = Önceki
+paginator-next = Sonraki

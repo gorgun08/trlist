@@ -32,18 +32,18 @@ editors-panel = List Editörleri
     .info = Listle ilgili herhangi bir probleminiz varsa, yada bir şeyin değiştirilmesini istiyorsanız bu kişilerle iletişime geçebilirsiniz.
 
 helpers-panel = List Helpers
-    .info = Contact these people if you have any questions regarding why a specific record was rejected. Do not needlessly bug them about checking submissions though!
+    .info = Rekorunuzun neden kabul edilmediğiyle ilgili bir sorunuz varsa bu kişilerle iletişime geçebilirsiniz.
 
-guidelines-panel = Guidelines
-    .info = All demonlist operations are carried out in accordance to our guidelines. Be sure to check them before submitting a record to ensure a flawless experience!
-    .button = Read the guidelines!
+guidelines-panel = Rekor Gereksinimleri
+    .info = Türklist'te rekorlarınızın geçerli kabul edilmesi için bazı gereksinimler vardır. Rekor atmadan önce mutlaka yönergelere göz atın!
+    .button = Yönergeleri oku!
 
-submission-panel = Submit Records
-    .info = Please do not submit nonsense, it only makes it harder for us all and will get you banned. Also note that the form rejects duplicate submissions.
-    .button = Submit a record!
+submission-panel = Rekor Gönderme
+    .info = Lütfen gereksiz rekor göndermeyin, geçmediğiniz bir şeyi göndermek sadece bizim işimizi zorlaştırır ve banlanmanıza olur. Ayrıca aynı rekoru iki kere göndermeniz red edilmesine sebep olur.
+    .button = Rekor gönder!
 
-statsviewer-panel = Stats Viewer
-    .info = Get a detailed overview of who completed the most, created the most demons or beat the hardest demons! There is even a leaderboard to compare yourself to the very best!
-    .button = Open the stats viewer!
+statsviewer-panel = Oyuncu Sıralaması
+    .info = Oyuncuların profilini detaylarıyla birlikte inceleyin! Kendinizi en iyi oyuncularla karşılaştırmak için bir sıralama tablosu da bulunmaktadır!
+    .button = Oyuncu sıralamasını açın!
 
-discord-panel-info = Join the official Demonlist discord server, where you can get in touch with the demonlist team!
+discord-panel-info = Türk oyuncularla ve Türklist yöneticileriyle iletişime geçmek için resmi Türklist discord serverına katılın!
