@@ -3,7 +3,7 @@ $record_score$
 SELECT CASE
            WHEN progress = 100 THEN
                    CASE
-                       WHEN demon BETWEEN 56 AND 150 THEN
+                       WHEN demon BETWEEN 56 AND 100 THEN
                             1.039035131 * ((185.7 * EXP((-0.02715 * demon))) + 14.84)
                        WHEN demon BETWEEN 36 AND 55 THEN
                             1.0371139743 * ((212.61 * POWER(1.036, 1 - demon)) + 25.071)
@@ -18,7 +18,7 @@ SELECT CASE
                0.0
            ELSE
                CASE
-                   WHEN demon BETWEEN 56 AND 150 THEN
+                   WHEN demon BETWEEN 56 AND 100 THEN
                         1.039035131 * ((185.7 * EXP((-0.02715 * demon))) + 14.84) * (EXP(LN(5) * (progress - requirement) / (100 - requirement))) / 10
                    WHEN demon BETWEEN 36 AND 55 THEN
                         (1.0371139743 * ((212.61 * POWER(1.036, 1 - demon)) + 25.071)) * (EXP(LN(5) * (progress - requirement) / (100 - requirement))) / 10

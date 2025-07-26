@@ -15,7 +15,7 @@ CREATE VIEW score_giving AS
     FROM demons;
 
 CREATE FUNCTION score_of_player(player_id INTEGER) RETURNS DOUBLE PRECISION AS $$
-    SELECT SUM(record_score(progress, position, 150, requirement)) 
+    SELECT SUM(record_score(progress, position, 100, requirement)) 
     FROM score_giving
     WHERE player = player_id
 $$ LANGUAGE SQL;
