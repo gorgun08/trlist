@@ -181,9 +181,18 @@ fn page_configuration() -> PageConfiguration {
         )
         .with_item(TopLevelNavigationBarItem::new(Some("/login/"), {
             html! {
-                span {
-                    (tr("nav-userarea"))
+                @if tr("nav-userarea") == "Kullanıcı Arayüzü" {
+                    span {
+                        {"Kullanıcı"}
+                        br
+                        {"Arayüzü"}
+                    }    
+                } @else {
+                    span {
+                        (tr("nav-userarea"))
+                    }
                 }
+                
             }
         }));
 
