@@ -55,7 +55,7 @@ fn home() -> Redirect {
     Redirect::to(uri!("/demonlist/"))
 }
 
-const DEFAULT_LOCALE: Language = lang!("en");
+const DEFAULT_LOCALE: Language = lang!("tr");
 
 #[rocket::launch]
 async fn rocket() -> _ {
