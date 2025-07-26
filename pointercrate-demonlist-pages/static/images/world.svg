@@ -33,7 +33,7 @@
 
 .selectable .land:hover path, .selectable .island:hover path, .selectable .land-with-states .state:hover, .selectable .land-with-states:not(.subdivided):hover path:not(.state),
 .selectable .land.selected path, .selectable .land-with-states.selected path:not(.state), .selectable .state.selected {
-  fill: #0881c6 !important;
+  fill: #692A25 !important;
 }
 
 .land-with-states.subdivided {
