@@ -33,12 +33,12 @@ demon-position = Pozisyon
     .validator-stepmismatch = Demon pozisyonu kesirli olmalıdır
     .validator-valuemissing = Lütfen pozisyon belirtin
 
-demon-requirement = Rekor gereksinimi
-    .validator-rangeunderflow = Rekor gereksinimi negatif olamaz
-    .validator-rangeoverflow = Rekor gereksinimi 100'den büyük olamaz
-    .validator-badinput = Rekor gereksinimi gerçek bir tam sayı olmalıdır
-    .validator-stepmismatch = Rekor gereksinimi kesirli olamaz
-    .validator-valuemissing = Lütfen bir rekor gereksinimi belirtin
+demon-requirement = Kayıt gereksinimi
+    .validator-rangeunderflow = Kayıt gereksinimi negatif olamaz
+    .validator-rangeoverflow = Kayıt gereksinimi 100'den büyük olamaz
+    .validator-badinput = Kayıt gereksinimi gerçek bir tam sayı olmalıdır
+    .validator-stepmismatch = Kayıt gereksinimi kesirli olamaz
+    .validator-valuemissing = Lütfen bir kayıt gereksinimi belirtin
 
 demon-publisher = Yayınlayan
     .validator-valuemissing = Lütfen bir publisher belirtin
@@ -88,7 +88,7 @@ movements-reason = Sebep
     .movedbelow = { $demon } bu demonun altına yerleştirildi
 
 ## Records table
-demon-records = Rekorlar
+demon-records = Kayıtlar
 
 demon-records-qualify = Kabul için {$percent}% { $percent ->
     [100] gerekli
@@ -96,8 +96,8 @@ demon-records-qualify = Kabul için {$percent}% { $percent ->
 }
 
 demon-records-total = {$num-records} { $num-records ->
-    [one] rekor kayıtlı
-    *[other] rekor kayıtlı
+    [one] kayıt kayıtlı
+    *[other] kayıt kayıtlı
 }, ve bunlardan {$num-completions} { $num-completions ->
     [one] tanesi 100%
     *[other] tanesi 100%
@@ -143,7 +143,7 @@ demon-add-form = Demon Ekle
 
 # Demon viewer dialogs
 demon-video-dialog = Verification video linkini değiştir
-    .info = Bu rekorun verification linkini değiştir. Verification videosunu kaldırmak için boş bırak.
+    .info = Bu kaydın verification linkini değiştir. Verification videosunu kaldırmak için boş bırak.
     .video-field = Video linki:
     .submit = Düzenle
 
@@ -155,7 +155,7 @@ demon-name-dialog = Demon adını değiştir
 # { $video-id } will be replaced by https://i.ytimg.com/vi/{.info-videoid}/mqdefault.jpg but italicized
 # in english, this looks like https://i.ytimg.com/vi/VIDEO_ID/mqdefault.jpg
 demon-thumbnail-dialog = Videonun kapak resmini değiştir
-    .info = Bu rekorun kapak fotoğrafı linkini değiştir. Bir youtube videosunun kapak resmine yönlendirmek için, { $video-id } olarak ayarla.
+    .info = Bu kaydın kapak fotoğrafı linkini değiştir. Bir youtube videosunun kapak resmine yönlendirmek için, { $video-id } olarak ayarla.
     .info-videoid = VIDEO_ID
 
     .thumbnail-field = Kapak resmi linki:
@@ -166,9 +166,9 @@ demon-position-dialog = Demon pozisyonunu değiştir
     .position-field = Pozisyon:
     .submit = Düzenle
 
-demon-requirement-dialog = Demon rekor gereksinimini değiştir
-    .info = Bu demonun rekor gereksinimini değiştir. 0 ve 100 dahil bu sayılar arasında olmalı.
-    .requirement-field = Rekor Gereksinimi:
+demon-requirement-dialog = Demon kayıt gereksinimini değiştir
+    .info = Bu demonun kayıt gereksinimini değiştir. 0 ve 100 dahil bu sayılar arasında olmalı.
+    .requirement-field = Kayıt Gereksinimi:
     .submit = Düzenle
 
 demon-publisher-dialog = Demon yayınlayıcısını değiştir

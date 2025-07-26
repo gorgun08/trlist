@@ -1,6 +1,6 @@
 nav-demonlist = Türklist
     .stats-viewer = Oyuncu Sıralaması
-    .record-submitter = Rekor Atın
+    .record-submitter = Kayıt Atın
     .time-machine = Zaman Makinesi
 
 nav-userarea = Kullanıcı Arayüzü

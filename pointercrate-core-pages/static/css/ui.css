@@ -639,7 +639,7 @@ h2 .dropdown-menu ul {
 
 /* (Under)lines */
 .underlined {
-  border-bottom: 1px solid var(--color-border);
+  
 }
 
 .underlined.pad {
