@@ -30,9 +30,9 @@
   --color-link: #69A3AD;
   --color-link-dark: #f77e39;
 
-  --color-pc-button-bg: #0881c6;
-  --color-pc-button-bg-hover: #076696;
-  --color-pc-button-bg-click: #055075;
+  --color-pc-button-bg: #161414;
+  --color-pc-button-bg-hover: #a38c8c;
+  --color-pc-button-bg-click: #837070;
   --color-pc-button-text: white;
   --color-pc-button-text-click: #eee;
 
@@ -42,9 +42,9 @@
 
   --color-unobstrusive-button-bg: var(--color-bg);
   --color-unobstrusive-button-bg-hover: #944843;
-  --color-unobstrusive-button-bg-click: #aaa;
+  --color-unobstrusive-button-bg-click: #6d3531;
   --color-unobstrusive-button-text: var(--color-text);
-  --color-unobstrusive-button-text-click: #111;
+  --color-unobstrusive-button-text-click: #ffffff94;
 }
 
 html {
