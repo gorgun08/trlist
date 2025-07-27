@@ -8,6 +8,7 @@ pub mod components;
 pub mod demon_page;
 pub mod overview;
 pub mod statsviewer;
+pub mod guidelines;
 
 struct ListSection {
     name: String,
@@ -107,7 +108,7 @@ fn rules_panel() -> Markup {
             p {
                 (tr("guidelines-panel.info"))
             }
-            a.blue.hover.button href = "/guidelines/" {
+            a.blue.hover.button href = "/demonlist/guidelines/" {
                 (tr("guidelines-panel.button"))
             }
         }

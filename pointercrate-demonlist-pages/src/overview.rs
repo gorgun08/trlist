@@ -26,7 +26,7 @@ pub struct OverviewPage {
 
 impl From<OverviewPage> for PageFragment {
     fn from(page: OverviewPage) -> Self {
-        PageFragment::new("Geometry Dash Demonlist", "The official pointercrate Demonlist!")
+        PageFragment::new("Geometry Dash Türklist", "Resmi Geometry Dash Türklist sitesi!")
             .module("/static/core/js/modules/form.js")
             .module("/static/demonlist/js/modules/demonlist.js")
             .module("/static/demonlist/js/demonlist.js")

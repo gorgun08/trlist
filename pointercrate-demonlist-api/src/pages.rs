@@ -181,6 +181,12 @@ pub async fn nation_stats_viewer() -> Page {
 }
 
 #[localized]
+#[rocket::get("/guidelines")]
+pub async fn guidelines() -> Page {
+    Page::new(pointercrate_demonlist_pages::guidelines::guidelines::guidelines())
+}
+
+#[localized]
 #[rocket::get("/statsviewer/heatmap.css")]
 pub async fn heatmap_css(pool: &State<PointercratePool>) -> Result<Response2<String>> {
     let mut connection = pool.connection().await?;

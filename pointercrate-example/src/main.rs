@@ -182,18 +182,10 @@ fn page_configuration() -> PageConfiguration {
         )
         .with_item(TopLevelNavigationBarItem::new(Some("/login/"), {
             html! {
-                @if tr("nav-userarea") == "Kullanıcı Arayüzü" {
-                    span {
-                        {"Kullanıcı"}
-                        br
-                        {"Arayüzü"}
-                    }    
-                } @else {
-                    span {
-                        (tr("nav-userarea"))
-                    }
+                div style="display:flex; flex-direction:column;" {
+                    span {"Kullanıcı"}
+                    span {"Arayüzü"}
                 }
-                
             }
         }));
 
@@ -228,7 +220,7 @@ fn page_configuration() -> PageConfiguration {
     // Stitching it all together into a page configuration
     PageConfiguration::new("turklist", nav_bar, footer)
         // Used for the HTML "author" meta tag
-        .author("gorgun08, yuri")
+        .author("gorgun, keremino")
         // Used for the HTML "keywords" meta tag
         .keywords("turklist, trlist, hardest levels beaten in turkey, turklist.com.tr, turklist.com")
 }
