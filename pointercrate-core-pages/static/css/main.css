@@ -1,6 +1,6 @@
 :root {
-  --color-ok-bg: rgb(238, 255, 228);
-  --color-ok-border: #a8ff93;
+  --color-ok-bg: rgb(117, 138, 105);
+  --color-ok-border: rgb(85, 100, 75);
   --color-ok-text: #074d07;
   --color-ok-accent: #68bf0b;
 
@@ -9,14 +9,14 @@
   --color-warn-text: #4d4707;
   /* --color-warn-accent */
 
-  --color-error-bg: #fdd;
-  --color-error-border: #ff9393;
+  --color-error-bg: rgb(179, 144, 144);
+  --color-error-border: rgb(141, 113, 113);
   --color-error-text: #4d0707;
   /* --color-error-accent */
 
-  --color-consider-bg: #48a2b3;
+  --color-consider-bg: #80a4b4;
   /* --color-consider-border */
-  --color-consider-text: #326067;
+  --color-consider-text: #4d646d;
   /* --color-consider-accent */
 
   --color-text: #ffffff;

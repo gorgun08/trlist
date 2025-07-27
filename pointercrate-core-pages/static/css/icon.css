@@ -140,7 +140,7 @@ i.fa.hover:hover {
   display: inline-block;
   width: 12px;
   height: 3px;
-  background-color: #333;
+  background-color: #cacaca;
   transition: 0.4s ease;
 }
 

@@ -16,11 +16,11 @@ td {
 }
 
 tr {
-  background: #fefeff;
+  background: #8d443f;
 }
 
 tr:nth-child(even) {
-  background: #e6eeff;
+  background: #532825;
 }
 
 #history-table {

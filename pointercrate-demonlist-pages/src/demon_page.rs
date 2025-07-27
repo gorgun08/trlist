@@ -451,7 +451,7 @@ impl DemonPage {
                                 "No records!"
                             }
                             @else {
-                                "No records yet! Be the first to achieve one!"
+                                "Henüz bir kayıt yok!"
                             }
                         }
                     }
