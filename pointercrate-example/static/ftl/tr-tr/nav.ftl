@@ -1,4 +1,4 @@
-nav-demonlist = Türklist
+nav-demonlist = TÜRKLİST
     .stats-viewer = Oyuncu Sıralaması
     .record-submitter = Kayıt Atın
     .time-machine = Zaman Makinesi

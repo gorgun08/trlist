@@ -1,7 +1,7 @@
-edit-success = Edit successful!
-edit-notmodified = Nothing changed.
+edit-success = Edit başarılı!
+edit-notmodified = Hiçbir şey değişmedi.
 
-dropdown-placeholder = Click to select
+dropdown-placeholder = Seçmek için tıkla
 
 filtered-paginator-placeholder = Enter to search...
 

@@ -1,6 +1,6 @@
 statsviewer = Stats Viewer
     .rank = Türklist rank
-    .score = Türklist score
+    .score = Türklist skoru
     .stats = Türklist statları
     .hardest = En zor demon
 

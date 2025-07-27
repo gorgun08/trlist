@@ -7,7 +7,7 @@ extended-list = Extended List
 legacy-list = Legacy List
     .info = Bunlar zamanında listte olan ama yeni demonların eklenmesiyle listten düşen demonlar. Legacy demonlarına kayıt atılamaz, arşiv amaçlı tutulurlar.
 
-demon-info = published by { $publisher }
+demon-info = { $publisher } tarafından yayınlandı
     .score = { $minimal-score } ({ $requirement }%) — { $total-score } (100%) puan
     .score-short = { $score } puan
 

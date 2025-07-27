@@ -20,8 +20,8 @@
 
 /* By default we do not show states, only whole country outlines (unless a state is selected) */
 .land path, .island path, .land-with-states .state, .land-with-states path {
-  stroke: #ffffff;
-  fill: #dadce0;
+  stroke: #999696ff;
+  fill: #4e4949ff;
   opacity: 1;
   transition: fill .3s;
 }
@@ -33,7 +33,7 @@
 
 .selectable .land:hover path, .selectable .island:hover path, .selectable .land-with-states .state:hover, .selectable .land-with-states:not(.subdivided):hover path:not(.state),
 .selectable .land.selected path, .selectable .land-with-states.selected path:not(.state), .selectable .state.selected {
-  fill: #692A25 !important;
+  fill: #833a35ff !important;
 }
 
 .land-with-states.subdivided {
