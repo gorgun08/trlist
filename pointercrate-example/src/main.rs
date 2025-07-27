@@ -197,7 +197,7 @@ fn page_configuration() -> PageConfiguration {
         br;
         "All rights reserved"
         br;
-        "turklist.com.tr and turklist are in no way affiliated with RobTopGamesAB ® or pointercrate.com"
+        "turklist.com.tr and Türklist are in no way affiliated with RobTopGamesAB ® or pointercrate.com"
     })
     // Add a column with links for various list-related highlights
     .with_column(FooterColumn::LinkList {

@@ -4,4 +4,4 @@ footer-demonlist = Türklist
     .legacy-list = { legacy-list }
 
 footer-tweet = Tweet Us:
-    .developer = Developer
+    .developer = Original Pointercrate Developer
