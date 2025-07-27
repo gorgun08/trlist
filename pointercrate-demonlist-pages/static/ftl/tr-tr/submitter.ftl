@@ -1,69 +1,69 @@
-submitter-banned = Banned
-    .yes = Yes
-    .no = No
+submitter-banned = Yasaklı
+    .yes = Evet
+    .no = Hayır
 
 ## Record submitter
-record-submission-panel = Submit Records
-    .info = Note: Please do not submit nonsense, it only makes it harder for us all and will get you banned. Also note that the form rejects duplicate submissions.
-    .redirect = Submit a record!
+record-submission-panel = Kayıt Atın
+    .info = Not: Lütfen boş kayıtlar atmayın, bizim işimizi zorlaştırır ve listten yasaklanırsınız. List kopya kayıt göndermeyi reddeder!
+    .redirect = Kayıt atın!
 
 # .note will prefix all notes in the record submission panel
 # (not to be confused with record notes)
 #
 # { $guidelines-link } will be replaced by .guidelines-link,
 # which is turned into a clickable link to the submission guidelines
-record-submission = Record Submission
-    .note = Note
+record-submission = Kayıt Formu
+    .note = Not
 
     .demon = Demon
-    .demon-info = The demon the record was made on. Only demons in the top {$list-size} are accepted. This excludes legacy demons!
+    .demon-info = Kaydını attığınız demon. Sadece ilk {$list-size}'deki demonlar kabul edilir. Legacy demonlar kabul edilmez!
 
-    .demon-validator-valuemissing = Please specify a demon
+    .demon-validator-valuemissing = Lütfen bir demon belirtin!
 
-    .holder = Holder
-    .holder-info = The player holding the record. Start typing to see suggestions of existing players. If this is your first submission, write your name, as you wish it to appear on the website, into the text field (ignoring any suggestions).
+    .holder = Kayıt sahibi
+    .holder-info = Kaydın sahibi oyuncu. Oyuncu tamlamalarını görmek için arayın. Eğer bu ilk kaydınızsa, isminizi tamlamaları önemsemeden olmasını istediğiniz gibi yazın.
 
-    .holder-input-placeholder = Start typing for suggestions...
+    .holder-input-placeholder = Tamlamalar için yazmaya başlayın.
 
-    .holder-validator-valuemissing = Please specify a record holder
-    .holder-validator-rangeoverflow = Due to Geometry Dash's limitations I know that no player has such a long name
+    .holder-validator-valuemissing = Lütfen bir oyuncu belirtin.
+    .holder-validator-rangeoverflow = Kullanıcı adınız çok uzun!
 
     .progress = Progress
-    .progress-info = The progress made as percentage. Only values greater than or equal to the demons record requirement and smaller than or equal to 100 are accepted!
-    .progress-placeholder = e. g. '50', '98'
+    .progress-info = Yüzdelik olarak progress. Demonun kabul edilmesi için gereken yüzdeye eşit veya büyük olması gerekir!
+    .progress-placeholder = mesela '50', '98'
 
-    .progress-validator-valuemissing = Please specify the record's progress
-    .progress-validator-rangeunderflow = Record progress cannot be negative
-    .progress-validator-rangeoverflow = Record progress cannot be larger than 100%
-    .progress-validator-badinput = Record progress must be a valid integer
-    .progress-validator-stepmismatch = Record progress mustn't be a decimal
+    .progress-validator-valuemissing = Lütfen progress belirtin
+    .progress-validator-rangeunderflow = Progress negatif olamaz
+    .progress-validator-rangeoverflow = Progress %100'den büyük olamaz
+    .progress-validator-badinput = Progress gerçek bir tam sayı olmalıdır
+    .progress-validator-stepmismatch = Progress bir tam sayı olmalıdır
 
     .video = Video
-    .video-info = A proof video of the legitimacy of the given record. If the record was achieved on stream, but wasn't uploaded anywhere else, please provide a twitch link to that stream.
-    .video-note = Please pay attention to only submit well-formed URLs!
-    .video-placeholder = e. g. https://youtu.be/cHEGAqOgddA
+    .video-info = Kaydın gerçeklik kanıdı. Eğer kayıt bir canlı yayında gerçekleştirildiyse ve başka hiçbir yere yayınlanmadıysa, lütfen bir canlı yayın linki verin.
+    .video-note = Lütfen düzgün URL oluşturmaya dikkat edin!
+    .video-placeholder = mesela https://youtu.be/dQw4w9WgXcQ
 
-    .video-validator-valuemissing = Please specify a video so we can check the record's validity
-    .video-validator-typemismatch = Please enter a valid URL
+    .video-validator-valuemissing = Lütfen bir video belirtin
+    .video-validator-typemismatch = Lütfen düzgün bir URL girin
 
     .raw-footage = Raw footage
-    .raw-footage-info-a = The unedited and untrimmed video for this completion, uploaded to a non-compressing (e.g. not YouTube) file-sharing service such as google drive. If the record was achieved on stream (meaning there is no recording), please provide a link to the stream VOD.
-    .raw-footage-info-b = Any personal information possibly contained within raw footage (e.g. names, sensitive conversations) will be kept strictly confidential and will not be shared outside of the demonlist team. Conversely, you acknowledge that you might inadvertently share such information by providing raw footage. You have the right to request deletion of your record note by contacting a list administrator.
-    .raw-footage-note = This is required for every record submitted to the list!
+    .raw-footage-info-a = Kaydın Google Drive'a yayınlanmış, editlenmemiş videosu. Eğer kayıt canlı yayında gerçekleştirildiyse ve raw footage yoksa, lütfen o yayının VOD'una link atın.
+    .raw-footage-info-b = Raw footage'da olan gizli ve hassas bilgiler sadece Türklist moderatörlerinde kalacak ve başka kimseye paylaşılmayacaktır. Aynı zamanda, fark etmeden bu tür gizli bilgileri paylaşabileceğinizi de hatırlayın! Bir list yöneticisine söyleyip raw footageınızın veri tabanından kaldırılmasını isteyebilirsiniz.
+    .raw-footage-note = Bu liste gönderilen her kayıt için gereklidir!
 
-    .raw-footage-validator-typemismatch = Please enter a valid URL
+    .raw-footage-validator-typemismatch = Lütfen düzgün bir URL girin
 
-    .notes = Notes or comments
-    .notes-info = Provide any additional notes you'd like to pass on to the list moderator receiving your submission.
-    .notes-placeholder = Your dreams and hopes for this record... or something like that
+    .notes = Kayıt için notlar
+    .notes-info = Bu gönderiye bakacak list moderatörü için notunuzu buraya girin.
+    .notes-placeholder = Bu kayıtla ilgini hayallerin...
 
-    .guidelines = By submitting the record you acknowledge the { $guidelines-link }.
-    .guidelines-link = submission guidelines
+    .guidelines = Bu kaydı göndererek { $guidelines-link } kabul ediyorsunuz.
+    .guidelines-link = list yönergelerini
 
-    .submit = Submit record
+    .submit = Kaydı gönder
 
-    .submission-success = Record successfully submitted.
-    .submission-success-queue = Record successfully submitted. It is { $queue-position } in the queue!
+    .submission-success = Kayıt başarılı bir şekilde gönderildi.
+    .submission-success-queue = Kayıt başarılı bir şekilde gönderildi. Sırada { $queue-position }. !
 
 ## Submitters tab
 submitters = Submitters
