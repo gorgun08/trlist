@@ -169,8 +169,9 @@ fn page_configuration() -> PageConfiguration {
                 // a Rust-like syntax and by interpolating and Rust variables from surrounding scopes (as long as the
                 // implement the `Render` trait). See https://maud.lambda.xyz/ for details.
                 html! {
-                    span {
-                        (tr("nav-demonlist"))
+                    div style="display:flex; flex-direction:column;" {
+                        span style="font-size:50%"{"Geometry Dash"}
+                        span {"TÜRKLİST"}
                     }
                 },
             )
