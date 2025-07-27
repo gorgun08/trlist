@@ -40,6 +40,7 @@ impl From<OverviewPage> for PageFragment {
 impl OverviewPage {
     fn head(&self) -> Markup {
         html! {
+            link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" {}
             (PreEscaped(r#"
                 <script type="application/ld+json">
                 {
@@ -79,7 +80,7 @@ impl OverviewPage {
                 </script>", list_config::list_size(), list_config::extended_list_size())
             ))
             // FIXME: abstract away
-            link ref = "canonical" href = "https://pointercrate.com/demonlist/";
+            // link ref = "canonical" href = "https://turklist.com.tr/demonlist/";
         }
     }
 

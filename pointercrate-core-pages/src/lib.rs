@@ -28,6 +28,7 @@ impl PageConfiguration {
         let default_head_html = html! {
             meta http-equiv="Content-Type" content = "text/html; charset=utf-8";
             meta http-equiv="Content-Style-Type" content="text/css";
+            link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" {}
         };
 
         PageConfiguration {
