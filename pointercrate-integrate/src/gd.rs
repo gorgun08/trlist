@@ -200,8 +200,9 @@ impl GeometryDashConnector {
     pub async fn store_newgrounds_song(&self, song: &NewgroundsSong<'_>) {
         let Ok(mut connection) = self.pool.begin().await else { return };
 
-        // FIXME: this
-        let Ok(song_link) = song.link.as_processed() else { return };
+        // since stadust is an absolute buffoon and fumbled so bad that the song_link returns "-"
+        // i am changing this to construct the link manually
+        let song_link = format!("https://www.newgrounds.com/audio/listen/{}", song.song_id);
 
         let _ = sqlx::query!(
             "INSERT INTO gj_newgrounds_song (song_id, song_name, index_3, song_artist, filesize, index_6, index_7, index_8, song_link) \
@@ -215,7 +216,7 @@ impl GeometryDashConnector {
             song.index_6.as_deref(),
             song.index_7.as_deref(),
             &song.index_8.as_ref(),
-            song_link.as_ref()
+            song_link.as_str(),
         )
         .execute(&mut *connection)
         .await;
