@@ -61,6 +61,7 @@ const DEFAULT_LOCALE: Language = lang!("tr");
 #[rocket::launch]
 async fn rocket() -> _ {
     // Load the configuration from your .env file
+    dotenv::dotenv().unwrap();
 
     // Load the translation files
     LocalesLoader::load(&[
