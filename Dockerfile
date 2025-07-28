@@ -48,6 +48,7 @@ ENV ROCKET_PORT=8080
 ENV ROCKET_ENV=production
 
 
+
 EXPOSE 8080
 
 # Entrypoint runs the migration, then the server
