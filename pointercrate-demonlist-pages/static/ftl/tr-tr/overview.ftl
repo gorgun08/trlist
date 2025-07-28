@@ -12,20 +12,20 @@ demon-info = { $publisher } tarafından yayınlandı
     .score-short = { $score } puan
 
 ## Time machine
-time-machine = Time Machine
-    .info = Enter the date you want to view the demonlist at below. For technical reasons, the earliest possible date is January 4th 2017. Note however that data before August 4th 2017 is only provided on a best-effort basis and not guaranteed to be 100% accurate. Particularly data from before April 4th 2017 contains significant errors!
+time-machine = Zaman Makinesi
+    .info = Aşağıya Türklist'i görmek istediğiniz tarihi girin. Bu siteye 28.07.2025 geçtiğimizden dolayı gözlemleyebileceğiniz en eski tarih budur. Sitenin daha önceki yıllardaki durumunu görmek için github sayfasına bakabilirsiniz.
 
-    .destination-field = Destination:
-    .submit = Go!
+    .destination-field = Tarih:
+    .submit = Başla!
 
-    .destination-validator-valuemissing = Please specify a value
-    .destination-validator-rangeunderflow = You cannot go back in time that far!
+    .destination-validator-valuemissing = Lütfen bir tarih giriniz
+    .destination-validator-rangeunderflow = Bu kadar eskiye gidemezsiniz!
 
-    .active-position = Currently #{ $position }
-    .active-position-legacy = Currently Legacy
+    .active-position = Günümüzde #{ $position }
+    .active-position-legacy = Günümüzde Legacy
 
-    .active-info = You are currently looking at the demonlist how it was on
-    .return = Go to present
+    .active-info = Şuan Türklist'in bu tarihte nasıl olduğuna bakıyorsunuz:
+    .return = Günümüze git
 
 ## Sidebar panels
 editors-panel = List Editörleri
