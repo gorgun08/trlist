@@ -547,7 +547,7 @@ p.error {
 
   z-index: 100;
 
-  box-shadow: 0px 8px 10px #ccc, -10px 8px 15px #ccc, 10px 8px 15px #ccc;
+  box-shadow: 0px 8px 10px #0000009a, -10px 8px 15px #0000009a, 10px 8px 15px #0000009a;
 }
 
 h1 .dropdown-menu ul,
@@ -568,9 +568,9 @@ h2 .dropdown-menu ul {
 }
 
 .dropdown-menu div:focus-within {
-  border: 1px solid #bbb;
+  border: 1px solid #0000009a;
   border-bottom: none;
-  box-shadow: 0 0 10px 5px #ccc;
+  box-shadow: 0 0 10px 5px #0000009a;
 }
 
 .dropdown-menu input:focus, .dropdown-menu input:invalid {

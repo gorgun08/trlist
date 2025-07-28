@@ -29,7 +29,7 @@ time-machine = Time Machine
 
 ## Sidebar panels
 editors-panel = List Editörleri
-    .info = Listle ilgili herhangi bir probleminiz varsa, yada bir şeyin değiştirilmesini istiyorsanız bu kişilerle iletişime geçebilirsiniz.
+    .info = Listle ilgili herhangi bir probleminiz varsa, ya da bir şeyin değiştirilmesini istiyorsanız bu kişilerle iletişime geçebilirsiniz.
 
 helpers-panel = List Helpers
     .info = Kaydınızın neden kabul edilmediğiyle ilgili bir sorunuz varsa bu kişilerle iletişime geçebilirsiniz.

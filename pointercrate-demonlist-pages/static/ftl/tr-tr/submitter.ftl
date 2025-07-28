@@ -16,21 +16,21 @@ record-submission = Kayıt Formu
     .note = Not
 
     .demon = Demon
-    .demon-info = Kaydını attığınız demon. Sadece ilk {$list-size}'deki demonlar kabul edilir. Legacy demonlar kabul edilmez!
+    .demon-info = Sadece ilk {$list-size}'deki demonlar kabul edilir. Legacy demonlar kabul edilmez!
 
     .demon-validator-valuemissing = Lütfen bir demon belirtin!
 
     .holder = Kayıt sahibi
-    .holder-info = Kaydın sahibi oyuncu. Oyuncu tamlamalarını görmek için arayın. Eğer bu ilk kaydınızsa, isminizi tamlamaları önemsemeden olmasını istediğiniz gibi yazın.
+    .holder-info = Eğer bu ilk kaydınızsa isminizi sitede gözükmesini istediğiniz gibi yazın (otomatik tamlamaları boşverin). İlk kaydınız değilse önceden girdiğiniz ismi girip çıkan ismi seçiniz.
 
-    .holder-input-placeholder = Tamlamalar için yazmaya başlayın.
+    .holder-input-placeholder = Seçmek için yazmaya başlayın.
 
     .holder-validator-valuemissing = Lütfen bir oyuncu belirtin.
     .holder-validator-rangeoverflow = Kullanıcı adınız çok uzun!
 
     .progress = Progress
     .progress-info = Yüzdelik olarak progress. Demonun kabul edilmesi için gereken yüzdeye eşit veya büyük olması gerekir!
-    .progress-placeholder = mesela '50', '98'
+    .progress-placeholder = örn: '50', '98'
 
     .progress-validator-valuemissing = Lütfen progress belirtin
     .progress-validator-rangeunderflow = Progress negatif olamaz
@@ -39,25 +39,25 @@ record-submission = Kayıt Formu
     .progress-validator-stepmismatch = Progress bir tam sayı olmalıdır
 
     .video = Video
-    .video-info = Kaydın gerçeklik kanıdı. Eğer kayıt bir canlı yayında gerçekleştirildiyse ve başka hiçbir yere yayınlanmadıysa, lütfen bir canlı yayın linki verin.
-    .video-note = Lütfen düzgün URL oluşturmaya dikkat edin!
-    .video-placeholder = mesela https://youtu.be/dQw4w9WgXcQ
+    .video-info = Kaydın hilesiz olduğunu kanıtlamak için video. Eğer kayıt bir canlı yayında gerçekleştirildiyse ve başka hiçbir yere yayınlanmadıysa, lütfen bir canlı yayın linki verin.
+    .video-note = Not: Lütfen düzgün URL linki göndermeye dikkat edin!
+    .video-placeholder = örn: https://youtu.be/dQw4w9WgXcQ
 
     .video-validator-valuemissing = Lütfen bir video belirtin
     .video-validator-typemismatch = Lütfen düzgün bir URL girin
 
     .raw-footage = Raw footage
-    .raw-footage-info-a = Kaydın Google Drive'a yayınlanmış, editlenmemiş videosu. Eğer kayıt canlı yayında gerçekleştirildiyse ve raw footage yoksa, lütfen o yayının VOD'una link atın.
+    .raw-footage-info-a = Kaydın Google Drive'a yayınlanmış, editlenmemiş videosu. Eğer kayıt canlı yayında gerçekleştirildiyse ve raw footage yoksa, lütfen o yayının VOD'unun linkini atın.
     .raw-footage-info-b = Raw footage'da olan gizli ve hassas bilgiler sadece Türklist moderatörlerinde kalacak ve başka kimseye paylaşılmayacaktır. Aynı zamanda, fark etmeden bu tür gizli bilgileri paylaşabileceğinizi de hatırlayın! Bir list yöneticisine söyleyip raw footageınızın veri tabanından kaldırılmasını isteyebilirsiniz.
     .raw-footage-note = Bu liste gönderilen her kayıt için gereklidir!
 
     .raw-footage-validator-typemismatch = Lütfen düzgün bir URL girin
 
-    .notes = Kayıt için notlar
+    .notes = Notlar ya da yorumlar
     .notes-info = Bu gönderiye bakacak list moderatörü için notunuzu buraya girin.
-    .notes-placeholder = Bu kayıtla ilgini hayallerin...
+    .notes-placeholder = Bu kayıtla ilgili hayallerin...
 
-    .guidelines = Bu kaydı göndererek { $guidelines-link } kabul ediyorsunuz.
+    .guidelines = Bu kaydı göndererek { $guidelines-link } kabul etmiş sayılıyorsunuz.
     .guidelines-link = list yönergelerini
 
     .submit = Kaydı gönder

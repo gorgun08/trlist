@@ -138,7 +138,7 @@ profile-get-token = Erişim tokeninizi alın
     .view-header = Sizin erişim tokeniniz
 
 profile-invalidate-tokens = Tokenleri geçersizleştir
-    .info = Eğer erişim tokeniniz leaklenirse, tokeni geçersizleştirebilirsiniz. Tokenleri geçersizleştirmek hesabınızın tüm tokenlerinin çalışmasını durduracaktır. Bu şuan tarayıcıda depolanan token için de geçerlidir, yani geçersizleştirdikten sonra tekrar giriş yapmanız gerekecektir!
+    .info = Eğer erişim tokeniniz leaklenirse, tokeni geçersizleştirebilirsiniz. Tokenleri geçersizleştirmek hesabınızın tüm tokenlerinin çalışmasını durduracaktır. Bu şu an tarayıcıda depolanan token için de geçerlidir, yani geçersizleştirdikten sonra tekrar giriş yapmanız gerekecektir!
     .button = Tüm tokenleri geçersizleştir
 
 profile-oauth = Link With Google
