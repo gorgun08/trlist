@@ -1,47 +1,47 @@
-player-banned = Banned
-    .yes = Yes
-    .no = No
+player-banned = Banlı
+    .yes = Evet
+    .no = Hayır
 
-player-nationality = Nationality
-    .info = Note that this is to be understood as 'Country of legal residency' and nothing else. No exceptions.
-    .none = None
+player-nationality = Millet
+    .info = Bu sadece yaşadığınız ülkeyi belirtir, nereli olduğunuzu belirtmez.
+    .none = Yok
 
-player-subdivision = Political Subdivision
-    .none = None
+player-subdivision = Siyasi alt birim
+    .none = Yok
 
 ## Players tab
-players = Players
+players = Oyuncular
 
-player-manager = Player Manager
+player-manager = Oyuncu Yöneticisi
 
-player-viewer = Player #
-    .welcome = Click on a player on the left to get started!
+player-viewer = Oyuncu #
+    .welcome = Başlamak için soldaki bir oyuncuya tıklayın!
 
-    .info = Welcome to the player manager. Here you can ban or unban players. Banning a player will delete all records of theirs which are in the submitted or under consideration state. All approved records will instead be set to rejected.
-    .records-redirect = Show records in record manager
+    .info = Oyuncu yöneticisine hoş geldiniz. Burada bir oyuncu banlayabilir ve banını kaldırabilirsiniz. Bir oyuncuyu banlamak, tüm kayıtlarını siler ve her kaydı reddedilmiş olur.
+    .records-redirect = Kayıtları kayıt yöneticisinde göster
 
-player-idsearch-panel = Search player by ID
-    .info = Players can be uniquely identified by ID. Entering a players's ID below will select it on the left (provided the player exists)
-    .id-field = Player ID:
+player-idsearch-panel = Oyuncuyu ID ile ara
+    .info = Her oyuncunun kendine özgü ID'si vardır. O ID ile oyuncu varsa, soldaki panelde seçilir.
+    .id-field = Oyuncu ID'si:
 
-    .submit = Find by ID
+    .submit = ID ile bul
 
-    .id-validator-valuemissing = Player ID required
+    .id-validator-valuemissing = ID gereklidir
 
-player-name-dialog = Change player name
-    .info = Change the name of this player. This will update their name on every one of their records. If a player with the new name already exists, the player objects will be merged, with the new object receiving the ID of the player you are currently editing. In this case, the record lists of the players are merged and their creator/verifier/publisher information is updated. Internally, each record is moved to to the new player, an on conflicts the same rules apply as when editing a record's holder.
-    .name-field = Name:
+player-name-dialog = Oyuncu adını değiştir
+    .info = Bu oyuncunun adını değiştir. Bu, onun adını her kayıtta değiştirir. Eğer o adla oyuncu zaten varsa, iki oyuncunun kayıtları birleşir.
+    .name-field = Ad:
 
-    .submit = Edit
+    .submit = Düzenle
 
-    .name-validator-valuemissing = Please provide a name for the player
+    .name-validator-valuemissing = Lütfen bir ad girin
 
 ## List integration tab
-list-integration = List Integration
+list-integration = List Etkileşimi
 
-claimed-player = Claimed Player
-    .verified = Verified
-    .unverified = Unverified
+claimed-player = Seçilen oyuncu
+    .verified = Doğrulanmış
+    .unverified = Doğrulanmamış
 
 # .info-api-link is turned into a clickable link to the geolocation API
 # pointercrate uses, and replaces { $info-api-link }
@@ -59,14 +59,14 @@ claim-lock-submissions = Lock submissions
 
     .edit-success = Successfully applied change
 
-claim-records = Your claimed player's records
-    .info = A list of your claimed player's records, including all under consideration and rejected records and all submissions. Use this to track the status of your submissions. Clicking on a record will pull up any public notes a list mod left on the given record. The background color of each record tells you whether the record is { $record-approved-styled }, { $record-submitted-styled }, { $record-rejected-styled } or { $record-underconsideration-styled }.
+claim-records = Seçtiğiniz oyuncunun kayıtları
+    .info = Burada gönderilen, kabul edilen, reddedilen ve incelenmekte olan her kaydınız bulunur. Bir kayda tıklayınca list moderatörünün kaydınıza bıraktığı notu görebilirsiniz. Her kaydın arkaplan rengi kaydın { $record-approved-styled }, { $record-submitted-styled }, { $record-rejected-styled } veya { $record-underconsideration-styled } olduğunu gösterir.
 
-    .record-notes = Notes for record { $record-id }:
-    .record-notes-none = No public notes on this record!
+    .record-notes = { $record-id }'li kaydın notları:
+    .record-notes-none = Burada bir not yok!
 
-claim-manager = Manage Claims
-    .info-a = Manage claims using the interface below. The list can be filtered by player and user using the panels on the right. Invalid claims should be deleted using the trash icon.
+claim-manager = Sahiplik Taleplerini Yönet
+    .info-a = Aşağıdaki arayüz ile sahiplik taleplerini yönetebilirsiniz. Taleplerin listesi arama kutusu ile filtrelenebilir. Geçersiz talepler çöp kutusuna tıklanarak kaldırılmalıdır.
     .info-b = To verify a claim, click the checkmark. Only verify claims you have verified to be correct (this will probably mean talking to the player that's being claimed, and asking if they initiated the claim themselves, or if the claim is malicious).
     .info-c = Once a claim on a player is verified, all other unverified claims on that player are auto-deleted. Users cannot put new, unverified claims on players that have a verified claim on them.
     .info-d = A claim with a green background is verified, a claim with a blue background is unverified/unchecked.

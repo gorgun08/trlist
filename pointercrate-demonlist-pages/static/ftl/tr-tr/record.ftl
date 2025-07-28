@@ -1,8 +1,8 @@
 ## Commonly referenced record data
-record-submitted = Submitted
-record-underconsideration = Under Consideration
-record-approved = Approved
-record-rejected = Rejected
+record-submitted = Gönderilmiş
+record-underconsideration = İncelenmekte
+record-approved = Onaylanmış
+record-rejected = Reddedilmiş
 
 record-videolink = Video Link
 record-videoproof = Video Proof
