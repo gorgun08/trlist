@@ -53,7 +53,6 @@ ENV EXTENDED_LIST_SIZE = 100
 ENV SQLX_OFFLINE=true
 
 
-
 EXPOSE 8080
 
 # Entrypoint runs the migration, then the server
