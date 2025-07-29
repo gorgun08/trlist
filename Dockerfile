@@ -70,4 +70,5 @@ ENV EXTENDED_LIST_SIZE=100
 
 EXPOSE 8080
 
-CMD ["/app/entrypoint.sh"]
+CMD ["/app/bin/pointercrate-example"]
+
