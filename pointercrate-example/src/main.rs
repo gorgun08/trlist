@@ -57,6 +57,13 @@ fn home() -> Redirect {
     Redirect::to(uri!("/demonlist/"))
 }
 
+#[rocket::get("/ping")]
+fn ping() -> &'static str {
+    println!("Ping endpoint hit!");
+    "pong"
+}
+
+
 const DEFAULT_LOCALE: Language = lang!("tr");
 
 #[rocket::launch]
@@ -93,7 +100,8 @@ async fn rocket() -> _ {
         // Register our 404 catcher
         .register("/", rocket::catchers![catch_401, catch_404, catch_422])
         // Register our home page
-        .mount("/", rocket::routes![home]);
+        .mount("/", rocket::routes![home])
+        .mount("/", rocket::routes![ping]);
 
     
 
@@ -153,11 +161,11 @@ async fn rocket() -> _ {
     // static files.
 
     rocket
-        .mount("/static/core", FileServer::from("pointercrate-core-pages/static"))
-        .mount("/static/demonlist", FileServer::from("pointercrate-demonlist-pages/static"))
-        .mount("/static/user", FileServer::from("pointercrate-user-pages/static"))
-        .mount("/static/example", FileServer::from("pointercrate-example/static"))
-        .mount("/static/images", FileServer::from("pointercrate-example/static"))
+        .mount("/static/core", FileServer::from("/app/pointercrate-core-pages/static"))
+        .mount("/static/demonlist", FileServer::from("/app/pointercrate-demonlist-pages/static"))
+        .mount("/static/user", FileServer::from("/app/pointercrate-user-pages/static"))
+        .mount("/static/example", FileServer::from("/app/pointercrate-example/static"))
+        .mount("/static/images", FileServer::from("/app/pointercrate-example/static"))
 }
 
 /// Constructs a [`PageConfiguration`] for your site.
