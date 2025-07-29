@@ -82,21 +82,21 @@ impl DemonPage {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "item": {{
-                                    "@id": "https://pointercrate.com/",
+                                    "@id": "https://trlist.fly.dev/",
                                     "name": "pointercrate"
                                 }}
                             }},{{
                                 "@type": "ListItem",
                                 "position": 2,
                                 "item": {{
-                                    "@id": "https://pointercrate.com/demonlist/",
+                                    "@id": "https://trlist.fly.dev/demonlist/",
                                     "name": "demonlist"
                                 }}
                             }},{{
                                 "@type": "ListItem",
                                 "position": 3,
                                 "item": {{
-                                    "@id": "https://pointercrate.com/demonlist/{0}/",
+                                    "@id": "https://trlist.fly.dev/demonlist/{0}/",
                                     "name": "{1}"
                                 }}
                             }}
@@ -104,7 +104,7 @@ impl DemonPage {
                     }},
                     "name": "#{0} - {1}",
                     "description": "{2}",
-                    "url": "https://pointercrate.com/demonlist/{0}/"
+                    "url": "https://trlist.fly.dev/demonlist/{0}/"
                 }}
                 </script>
             "##, self.data.position(), self.data.name(), self.description())))
@@ -243,7 +243,7 @@ impl DemonPage {
                     }
                     (PreEscaped(format!(r#"
                     <script>
-                    document.getElementById("demon-heading").addEventListener('click', () => navigator.clipboard.writeText('https://pointercrate.com/demonlist/permalink/{}/?redirect'))
+                    document.getElementById("demon-heading").addEventListener('click', () => navigator.clipboard.writeText('https://trlist.fly.dev/demonlist/permalink/{}/?redirect'))
                     </script>
                     "#, self.data.demon.base.id)))
                     h3 {

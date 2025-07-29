@@ -53,7 +53,7 @@ impl OverviewPage {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "item": {
-                                    "@id": "https://pointercrate.com/",
+                                    "@id": "https://trlist.fly.dev/",
                                     "name": "pointercrate"
                                 }
                             },
@@ -61,7 +61,7 @@ impl OverviewPage {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "item": {
-                                    "@id": "https://pointercrate.com/demonlist/",
+                                    "@id": "https://trlist.fly.dev/demonlist/",
                                     "name": "demonlist"
                                 }
                             }
@@ -69,7 +69,7 @@ impl OverviewPage {
                     },
                     "name": "Geometry Dash Demonlist",
                     "description": "The official pointercrate Demonlist!",
-                    "url": "https://pointercrate.com/demonlist/"
+                    "url": "https://trlist.fly.dev/demonlist/"
                 }
                 </script>
             "#))

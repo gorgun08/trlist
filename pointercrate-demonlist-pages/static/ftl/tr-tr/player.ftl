@@ -54,10 +54,10 @@ claim-geolocate = Geolocate statsviewer flag
     .edit-success = Set nationality to { $nationality }
     .edit-success-subdivision = Set nationality to { $nationality }/{ $subdivision }
 
-claim-lock-submissions = Lock submissions
-    .info = Whether submissions for your claimed player should be locked, meaning only you will be able to submit records for your claimed player (and only while logged in to this account holding the verified claim)
+claim-lock-submissions = Gönderimleri kilitle
+    .info = Gönderimleri kilitleyince, sadece siz -hesabına giriş yapılmış bir şekilde- kayıt atabilirsiniz.
 
-    .edit-success = Successfully applied change
+    .edit-success = Başarılı bir şekilde gönderimler kilitlendi
 
 claim-records = Seçtiğiniz oyuncunun kayıtları
     .info = Burada gönderilen, kabul edilen, reddedilen ve incelenmekte olan her kaydınız bulunur. Bir kayda tıklayınca list moderatörünün kaydınıza bıraktığı notu görebilirsiniz. Her kaydın arkaplan rengi kaydın { $record-approved-styled }, { $record-submitted-styled }, { $record-rejected-styled } veya { $record-underconsideration-styled } olduğunu gösterir.
