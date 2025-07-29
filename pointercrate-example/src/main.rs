@@ -73,10 +73,10 @@ async fn rocket() -> _ {
 
     // Load the translation files
     LocalesLoader::load(&[
-        "/app/pointercrate-core-pages/static/ftl/",
-        "/app/pointercrate-demonlist-pages/static/ftl/",
-        "/app/pointercrate-user-pages/static/ftl/",
-        "/app/pointercrate-example/static/ftl/",
+        "./pointercrate-core-pages/static/ftl/",
+        "./pointercrate-demonlist-pages/static/ftl/",
+        "./pointercrate-user-pages/static/ftl/",
+        "./pointercrate-example/static/ftl/",
     ])
     .expect("Failed to load localization files")
     .commit(DEFAULT_LOCALE);
@@ -161,11 +161,11 @@ async fn rocket() -> _ {
     // static files.
 
     rocket
-        .mount("/static/core", FileServer::from("/app/pointercrate-core-pages/static"))
-        .mount("/static/demonlist", FileServer::from("/app/pointercrate-demonlist-pages/static"))
-        .mount("/static/user", FileServer::from("/app/pointercrate-user-pages/static"))
-        .mount("/static/example", FileServer::from("/app/pointercrate-example/static"))
-        .mount("/static/images", FileServer::from("/app/pointercrate-example/static"))
+        .mount("/static/core", FileServer::from("./pointercrate-core-pages/static"))
+        .mount("/static/demonlist", FileServer::from("./pointercrate-demonlist-pages/static"))
+        .mount("/static/user", FileServer::from("./pointercrate-user-pages/static"))
+        .mount("/static/example", FileServer::from("./pointercrate-example/static"))
+        .mount("/static/images", FileServer::from("./pointercrate-example/static"))
 }
 
 /// Constructs a [`PageConfiguration`] for your site.

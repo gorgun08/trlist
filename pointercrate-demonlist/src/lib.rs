@@ -16,6 +16,7 @@ pub const LIST_HELPER: Permission = Permission::new("user-permissions.list-helpe
 pub const LIST_MODERATOR: Permission = Permission::new("user-permissions.list-moderator", 0x4);
 pub const LIST_ADMINISTRATOR: Permission = Permission::new("user-permissions.list-administrator", 0x8);
 
+
 pub fn default_permissions_manager() -> PermissionsManager {
     PermissionsManager::new(vec![ADMINISTRATOR, LIST_HELPER, LIST_MODERATOR, LIST_ADMINISTRATOR])
         .assigns(ADMINISTRATOR, LIST_ADMINISTRATOR)

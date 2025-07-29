@@ -67,27 +67,27 @@ claim-records = Seçtiğiniz oyuncunun kayıtları
 
 claim-manager = Sahiplik Taleplerini Yönet
     .info-a = Aşağıdaki arayüz ile sahiplik taleplerini yönetebilirsiniz. Taleplerin listesi arama kutusu ile filtrelenebilir. Geçersiz talepler çöp kutusuna tıklanarak kaldırılmalıdır.
-    .info-b = To verify a claim, click the checkmark. Only verify claims you have verified to be correct (this will probably mean talking to the player that's being claimed, and asking if they initiated the claim themselves, or if the claim is malicious).
-    .info-c = Once a claim on a player is verified, all other unverified claims on that player are auto-deleted. Users cannot put new, unverified claims on players that have a verified claim on them.
-    .info-d = A claim with a green background is verified, a claim with a blue background is unverified/unchecked.
+    .info-b = Bir talebi doğrulamak için, onay işaretine tıklayın. Sadece doğru olduğuna inandığınız talepleri doğrulayın.
+    .info-c = Bir sahiplik talebi doğrulanınca, diğer doğrulanmamış talepler otomatikmen silinir. Sahiplik talebi doğrulanmış hesaplara tekrar sahiplik talebi yapılamaz.
+    .info-d = Arkaplanı yeşil olan talep doğrulanmış, arkaplanı mavi olan talep ise doğrulanmamıştır/incelenmemiştir.
 
-    .claim-no-records = The claimed player ({ $player-id }) does not have an approved record on the list
+    .claim-no-records = Taleplenen oyuncunun ({ $player-id }) listte kabul edilmiş kaydı yoktur
 
-claim-listed-user = Claim by user:
-claim-listed-player = Claim on player:
+claim-listed-user = Kim tarafından talep edilmiş:
+claim-listed-player = Hangi oyuncu talep edilmiş:
 
-claim-initiate-panel = Initiate Claim
-    .info = Select the player you wish to claim below
+claim-initiate-panel = Talep açın
+    .info = Sahibi olmak istediğiniz oyuncuyu seçin
 
 # { $discord } is replaced by .info-discord, which is turned into a
 # clickable link to Pointercrate Central by default (this can be modified
 # in pointercrate-example/src/main.rs)
-claim-info-panel = Claiming 101
-    .info-a = Player claiming is the process of associated a demonlist player with a pointercrate user account. A verified claim allows you to to modify some of the player's properties, such as nationality.
-    .info-b = To initiate a claim, click the pen left of the 'Claimed Player' heading. Once initiated, you have an unverified claim on a player. These claims will then be manually verified by members of the pointercrate team. You can request verification in { $discord }.
-    .info-c = You cannot initiate a claim on a player that already has a verified claim by a different user on it.
+claim-info-panel = Sahiplik Talebi 101
+    .info-a = Sahiplik talebi ile bir türklist hesabını bir oyuncuya bağlayabilirsiniz. Oyuncuyu hesaba bağlayınca, kayıtlarınızın durumunu vs. görebilirsiniz.
+    .info-b = Bir talep başlatmak için, Seçilen Oyuncu kısmındaki kaleme tıklayın. Sonra, sağdaki panelden talep ettiğiniz oyuncuyu seçin. Talebinizin doğrulanması için { $discord } #list-claimler kanalına mesaj atın.
+    .info-c = Doğrulanmış bir talebe sahip olan oyunculara talep atamazsınız.
 
-    .info-discord = this discord server
+    .info-discord = Türklist Discord Sunucusunda
 
-claim-video-panel = Record video
-    .info = Clicking a claim in the 'Manage Claims' panel will pull up a random video of an approved record by the claimed player.
+claim-video-panel = Kayıt videosu
+    .info = Sahiplik Taleplerini Yönet panelinde bir talebe tıklayınca talep edilen oyuncunun rastgele bir kaydının videosunu gösteri.

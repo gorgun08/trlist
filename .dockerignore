@@ -41,3 +41,7 @@ coverage/
 **/target/
 **/.cargo-checksum.json
 **/Cargo.lock.bk
+
+*.log
+**/incremental/
+target/doc/
