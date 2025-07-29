@@ -85,10 +85,10 @@ async fn rocket() -> _ {
     // DATABASE_URL environment variable
     let pool = PointercratePool::init().await;
     sqlx::migrate!("../migrations").run(&pool.clone_inner()).await;
-    
+
     let config = Config::figment()
-        .merge(("address", "0.0.0.0"))
-        .merge(("port", 8080));
+    .merge(("address", "0.0.0.0"))
+    .merge(("port", 8080));
 
     // Set up the HTTP server
     let rocket = rocket::custom(config)
