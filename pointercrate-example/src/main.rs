@@ -77,10 +77,13 @@ async fn rocket() -> _ {
     // DATABASE_URL environment variable
     let pool = PointercratePool::init().await;
     sqlx::migrate!("../migrations").run(&pool.clone_inner()).await;
-
+    
+    let config = Config::figment()
+        .merge(("address", "0.0.0.0"))
+        .merge(("port", 8080));
 
     // Set up the HTTP server
-    let rocket = rocket::build()
+    let rocket = rocket::custom(config)
         // Tell it about the connection pool to use (individual handlers can get hold of this pool by declaring an argument of type `&State<PointercratePool>`)
         .manage(pool)
         // Tell pointercrate's core components about navigation bar and footers, so that it knows how to render the website
