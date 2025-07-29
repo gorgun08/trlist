@@ -1,0 +1,24 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO submitters (submitter_id, ip_address, banned) VALUES ($1, $2, $3) ON CONFLICT (submitter_id) DO NOTHING RETURNING submitter_id",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "submitter_id",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Int4",
+        "Inet",
+        "Bool"
+      ]
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "a1034cf2f06c31fc238cc347b07391067735d51d07daf13a90bf09d55aae7ab8"
+}

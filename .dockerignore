@@ -1,0 +1,43 @@
+# Ignore target directories (build artifacts)
+target/
+**/target/
+
+# Ignore local environment files and config
+.env
+.env.*
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# Ignore Git metadata and logs
+.git
+.gitignore
+.gitattributes
+
+# Ignore system files
+Thumbs.db
+desktop.ini
+
+# Ignore node_modules if you have any JS parts
+node_modules/
+
+# Ignore tests and docs if you don't want them in the image
+tests/
+docs/
+
+# Ignore coverage reports and lockfiles for other tools if any
+coverage/
+
+# Ignore backup and temp files
+*.bak
+*.tmp
+*.temp
+
+# Ignore cargo incremental and check files
+**/target/
+**/.cargo-checksum.json
+**/Cargo.lock.bk

@@ -1,0 +1,14 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "UPDATE members SET generation = generation + 1 WHERE member_id = $1",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Int4"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "c0ece4d4c1e1fa44129ccde0636a9fcf7df7aaa580c0f64ce86d6cb50f0ceff3"
+}

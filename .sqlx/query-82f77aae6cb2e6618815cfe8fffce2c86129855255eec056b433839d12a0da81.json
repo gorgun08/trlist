@@ -1,0 +1,98 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT progress,\n       CASE WHEN players.link_banned THEN NULL ELSE records.video::text END,\n       CASE WHEN players.link_banned THEN NULL ELSE records.raw_footage::text END,\n       status_::text AS \"status!: String\" ,\n       players.id AS player_id, players.name AS \"player_name: String\", players.banned AS player_banned,\n       demons.id AS demon_id, demons.name AS \"demon_name: String\", demons.position,\n       submitters.submitter_id AS submitter_id, submitters.banned AS submitter_banned\nFROM records\nINNER JOIN players ON records.player = players.id\nINNER JOIN demons ON records.demon = demons.id\nINNER JOIN submitters ON records.submitter = submitters.submitter_id\nWHERE records.id = $1\n",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "progress",
+        "type_info": "Int2"
+      },
+      {
+        "ordinal": 1,
+        "name": "video",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "raw_footage",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 3,
+        "name": "status!: String",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 4,
+        "name": "player_id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 5,
+        "name": "player_name: String",
+        "type_info": {
+          "Custom": {
+            "name": "citext",
+            "kind": "Simple"
+          }
+        }
+      },
+      {
+        "ordinal": 6,
+        "name": "player_banned",
+        "type_info": "Bool"
+      },
+      {
+        "ordinal": 7,
+        "name": "demon_id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 8,
+        "name": "demon_name: String",
+        "type_info": {
+          "Custom": {
+            "name": "citext",
+            "kind": "Simple"
+          }
+        }
+      },
+      {
+        "ordinal": 9,
+        "name": "position",
+        "type_info": "Int2"
+      },
+      {
+        "ordinal": 10,
+        "name": "submitter_id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 11,
+        "name": "submitter_banned",
+        "type_info": "Bool"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Int4"
+      ]
+    },
+    "nullable": [
+      false,
+      null,
+      null,
+      null,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "82f77aae6cb2e6618815cfe8fffce2c86129855255eec056b433839d12a0da81"
+}

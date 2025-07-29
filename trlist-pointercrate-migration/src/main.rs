@@ -99,12 +99,12 @@ fn sort_demons_by_list_order(tsl_demons: &mut Vec<TSLDemonWithFileAndPosition>, 
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    let TSLData { mut demons, list } = import_tsl_data("trlist-pointercrate-migration/tsl_data")?;
+    let TSLData { mut demons, list } = import_tsl_data("/app/trlist-pointercrate-migration/tsl_data")?;
 
     filter_demons_by_list(&mut demons, &list);
     sort_demons_by_list_order(&mut demons, &list);
 
-    let pool = PgPool::connect("postgres://pointercrate:pointercrate@localhost:5432/pointercrate").await?;
+    let pool = PgPool::connect(&std::env::var("DATABASE_URL").unwrap()).await?;
     let mut conn = pool.acquire().await?;
 
     let _ = sqlx::query!(

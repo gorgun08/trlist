@@ -21,6 +21,7 @@ pointercrate-user-api = { version = "0.1.0", path = "../pointercrate-user-api", 
 pointercrate-user-pages = { version = "0.1.0", path = "../pointercrate-user-pages", features = ["legacy_accounts"] }
 rocket = "0.5.1"
 unic-langid = { version = "0.9.5", features = ["macros"] }
+sqlx = { version = "0.8.6", features = ["runtime-tokio-rustls", "macros", "postgres"] }
 
 [features]
 oauth2 = ["pointercrate-user-api/oauth2", "pointercrate-user-pages/oauth2"]

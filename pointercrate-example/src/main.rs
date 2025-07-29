@@ -62,12 +62,13 @@ const DEFAULT_LOCALE: Language = lang!("tr");
 async fn rocket() -> _ {
     // Load the configuration from your .env file
     dotenv::dotenv().ok();
+
     // Load the translation files
     LocalesLoader::load(&[
-        "pointercrate-core-pages/static/ftl/",
-        "pointercrate-demonlist-pages/static/ftl/",
-        "pointercrate-user-pages/static/ftl/",
-        "pointercrate-example/static/ftl/",
+        "/app/pointercrate-core-pages/static/ftl/",
+        "/app/pointercrate-demonlist-pages/static/ftl/",
+        "/app/pointercrate-user-pages/static/ftl/",
+        "/app/pointercrate-example/static/ftl/",
     ])
     .expect("Failed to load localization files")
     .commit(DEFAULT_LOCALE);
@@ -75,6 +76,8 @@ async fn rocket() -> _ {
     // Initialize a database connection pool to the database specified by the
     // DATABASE_URL environment variable
     let pool = PointercratePool::init().await;
+    sqlx::migrate!("../migrations").run(&pool.clone_inner()).await;
+
 
     // Set up the HTTP server
     let rocket = rocket::build()
@@ -87,6 +90,8 @@ async fn rocket() -> _ {
         .register("/", rocket::catchers![catch_401, catch_404, catch_422])
         // Register our home page
         .mount("/", rocket::routes![home]);
+
+    
 
     // Define the permissions in use on our website. We just use the default setup
     // from `pointercrate_user` and `pointercrate_demonlist`, but if you for example
