@@ -5,6 +5,7 @@ use pointercrate_core::{error::CoreError, localization::tr};
 use pointercrate_core_api::{error::ErrorResponder, maintenance::MaintenanceFairing, preferences::PreferenceManager};
 use pointercrate_core_macros::localized_catcher;
 use pointercrate_core_pages::head::HeadLike;
+use rocket::Config;
 use pointercrate_core_pages::{
     footer::{Footer, FooterColumn, Link},
     navigation::{NavigationBar, TopLevelNavigationBarItem},
