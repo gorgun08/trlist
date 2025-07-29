@@ -22,6 +22,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y libssl-dev ca-certificates && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && apt-get install -y file
+
+
 # Copy built binaries
 COPY --from=builder /app/target/release/pointercrate-example /app/bin/pointercrate-example
 COPY --from=builder /app/target/release/trlist-pointercrate-migration /app/bin/trlist-pointercrate-migration
