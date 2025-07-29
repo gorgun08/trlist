@@ -31,6 +31,10 @@ COPY . .
 
 # Entrypoint
 COPY entrypoint.sh /app/entrypoint.sh
+RUN ls -l /app/entrypoint.sh
+RUN cat /app/entrypoint.sh
+RUN file /app/entrypoint.sh
+RUN head -n 3 /app/entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
 
 # Set environment variables
