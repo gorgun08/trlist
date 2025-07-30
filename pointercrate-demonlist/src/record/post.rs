@@ -47,8 +47,8 @@ pub struct ValidatedSubmission {
     video: Option<String>,
     raw_footage: Option<String>,
     status: RecordStatus,
-    player: DatabasePlayer,
-    demon: MinimalDemon,
+    pub player: DatabasePlayer,
+    pub demon: MinimalDemon,
     note: Option<String>,
 }
 
