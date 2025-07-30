@@ -470,7 +470,6 @@ p.error {
 
 @media (min-width:1440px) {
   #bg {
-    background-image: url(/static/images/squares3.png);
     background-size: cover;
     background-repeat: repeat-y;
     position: fixed;
