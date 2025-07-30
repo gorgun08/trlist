@@ -41,7 +41,7 @@ pub struct NormalizedSubmission {
     note: Option<String>,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct ValidatedSubmission {
     progress: i16,
     video: Option<String>,

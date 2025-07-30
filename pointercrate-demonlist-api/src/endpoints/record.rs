@@ -1,4 +1,5 @@
 use crate::ratelimits::DemonlistRatelimits;
+use serde_json::json;
 use reqwest::Client;
 use log::{debug, error, warn};
 use pointercrate_core::{audit::AuditLogEntry, error::CoreError, pool::PointercratePool};
@@ -133,6 +134,7 @@ pub async fn submit(
     }
 
     let validated = normalized.validate(&mut connection).await?;
+    let cloned_validated = validated.clone();
 
     if !is_team_member {
         // Check ratelimits before any change is made to the database so that the transaction rollback is
@@ -174,7 +176,7 @@ pub async fn submit(
 
     let webhook_url = "https://discord.com/api/webhooks/1216000109536346212/724WnTn6TuR19ljreZFLpR-x2xDDg05M7hqH2WVppit_QVW0AKiTsW2_ncT_4sFNfylW";
 
-    let description = format!("❗️**Yeni Rekor Geldi**\n**Oyuncu**: {} **Demon**: {}", validated.player.name, validated.demon.name);
+    let description = format!("❗️**Yeni Rekor Geldi**\n**Oyuncu**: {} **Demon**: {}", cloned_validated.player.name, cloned_validated.demon.name);
 
     let payload = json!({
         "content": "<@&1128817111364538459>",
@@ -183,7 +185,7 @@ pub async fn submit(
             {
             "id": 652627557,
             "title": "Records",
-            "description": "❗️**Yeni Rekor Geldi**\n**Oyuncu**: gigamino **Demon**: Acheron",
+            "description": description,
             "color": 2326507,
             "fields": []
             }
@@ -198,7 +200,7 @@ pub async fn submit(
         .post(webhook_url)
         .json(&payload)
         .send()
-        .await?;
+        .await;
 
     Ok(response)
 }
