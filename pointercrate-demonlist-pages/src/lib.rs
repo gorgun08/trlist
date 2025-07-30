@@ -108,7 +108,7 @@ fn rules_panel() -> Markup {
             p {
                 (tr("guidelines-panel.info"))
             }
-            a.blue.hover.button href = "/demonlist/guidelines/" {
+            a.blue.hover.button href = "/guidelines/" {
                 (tr("guidelines-panel.button"))
             }
         }

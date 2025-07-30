@@ -104,7 +104,7 @@ impl Render for RecordSubmitter<'_> {
                             (
                                 "guidelines-link",
                                 html! {
-                                    a.link href = "/demonlist/guidelines" { (tr("record-submission.guidelines-link")) }
+                                    a.link href = "/guidelines" { (tr("record-submission.guidelines-link")) }
                                 }.into_string()
                             )
                         )))

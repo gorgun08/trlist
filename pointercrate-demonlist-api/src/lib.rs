@@ -88,7 +88,10 @@ pub fn setup(rocket: Rocket<Build>) -> Rocket<Build> {
                 pages::demon_page,
                 pages::demon_permalink,
                 pages::heatmap_css,
-                pages::guidelines,
             ],
+        )
+        .mount(
+            "/",
+            rocket::routes![pages::guidelines],
         )
 }
