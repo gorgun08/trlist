@@ -1,3 +1,5 @@
+#[cfg(feature = "legacy_accounts")]
+use crate::ip_extractor::RealIp;
 use crate::{auth::Auth, ratelimits::UserRatelimits};
 use pointercrate_core::etag::Taggable;
 use pointercrate_core_api::{
@@ -28,9 +30,11 @@ use {
 #[localized]
 #[rocket::post("/register", data = "<body>")]
 pub async fn register(
-    ip: IpAddr, body: Json<Registration>, ratelimits: &State<UserRatelimits>, pool: &State<PointercratePool>,
+    real_ip: RealIp, body: Json<Registration>, ratelimits: &State<UserRatelimits>, pool: &State<PointercratePool>,
 ) -> Result<Response2<Tagged<User>>> {
     use pointercrate_user::auth::AuthenticatedUser;
+
+    let ip = real_ip.0;
 
     let mut connection = pool.transaction().await.map_err(UserError::from)?;
 

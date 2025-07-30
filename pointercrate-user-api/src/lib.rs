@@ -3,6 +3,7 @@ use crate::ratelimits::UserRatelimits;
 use rocket::{Build, Rocket};
 
 pub mod auth;
+pub mod ip_extractor;
 mod endpoints;
 #[cfg(feature = "oauth2")]
 mod oauth;
