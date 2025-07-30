@@ -174,34 +174,6 @@ pub async fn submit(
         );
     }
 
-    let webhook_url = "https://discord.com/api/webhooks/1216000109536346212/724WnTn6TuR19ljreZFLpR-x2xDDg05M7hqH2WVppit_QVW0AKiTsW2_ncT_4sFNfylW";
-
-    let description = format!("❗️**Yeni Rekor Geldi**\n**Oyuncu**: {} **Demon**: {}", cloned_validated.player.name, cloned_validated.demon.name);
-
-    let payload = json!({
-        "content": "<@&1128817111364538459>",
-        "tts": false,
-        "embeds": [
-            {
-            "id": 652627557,
-            "title": "Records",
-            "description": description,
-            "color": 2326507,
-            "fields": []
-            }
-        ],
-        "components": [],
-        "actions": {},
-        "flags": 0
-    });
-
-    let client = Client::new();
-    let res = client
-        .post(webhook_url)
-        .json(&payload)
-        .send()
-        .await;
-
     Ok(response)
 }
 
@@ -422,7 +394,7 @@ async fn execute_webhook(body: serde_json::Value) {
 
 fn webhook_embed(record: &FullRecord) -> serde_json::Value {
     let mut payload = serde_json::json!({
-        "content": format!("**New record submitted! ID: {}**", record.id),
+        "content": format!("<@&{}> **New record submitted! ID: {}**", crate::config::submission_moderator_role_id().unwrap(), record.id),
         "embeds": [
             {
                 "type": "rich",
