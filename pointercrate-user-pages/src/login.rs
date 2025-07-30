@@ -8,7 +8,7 @@ use pointercrate_user::config;
 
 pub fn login_page() -> PageFragment {
     let mut frag = PageFragment::new(
-        "Pointercrate - Login",
+        "Türklist - Giriş",
         "Log in to an existing pointercrate account or register for a new one!",
     )
     .module("/static/user/js/login.js")

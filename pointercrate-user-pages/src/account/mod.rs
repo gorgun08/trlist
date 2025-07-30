@@ -69,7 +69,7 @@ pub struct AccountPage {
 
 impl From<AccountPage> for PageFragment {
     fn from(account: AccountPage) -> Self {
-        let mut fragment = PageFragment::new(format!("Account - {}", account.user.user().name), "")
+        let mut fragment = PageFragment::new(format!("Hesap - {}", account.user.user().name), "")
             .module("/static/core/js/modules/form.js")
             .stylesheet("/static/user/css/account.css")
             .stylesheet("/static/core/css/sidebar.css")

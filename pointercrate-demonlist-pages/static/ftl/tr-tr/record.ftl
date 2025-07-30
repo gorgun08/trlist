@@ -4,120 +4,114 @@ record-underconsideration = İncelenmekte
 record-approved = Onaylanmış
 record-rejected = Reddedilmiş
 
-record-videolink = Video Link
-record-videoproof = Video Proof
+record-videolink = Video Linki
+record-videoproof = Video Kanıtı
 record-rawfootage = Raw Footage
 record-demon = Demon
-record-holder = Record Holder
+record-holder = Kayıt Sahibi
 record-progress = Progress
-record-submitter = Submitter ID
+record-submitter = Gönderenin ID'si
 
 ## Records tab (user area)
-records = Records
-record-manager = Record Manager
-    .all-option = All Demons
+records = Kayıtlar
+record-manager = Kayıt Yöneticisi
+    .all-option = Tüm Demonlar
 
-record-listed = Record #{ $record-id }
-    .progress = { $percent }% on { $demon }
+record-listed = { $record-id }. Kayıt
+    .progress = { $demon }'da { $percent }%
 
-record-viewer = Record #
-    .welcome = Click on a record on the left to get started!
-    .delete = Delete Record
+record-viewer = Kayıt #
+    .welcome = Sağdaki kayıtlardan birisine tıklayarak kayıtları yönetebilirsiniz!
+    .delete = Kaydı Sil
 
-    .copy-data-success = Copied record data to clipboard!
-    .copy-data-error = Error copying to clipboard
+    .copy-data-success = Kayıt verisi kopyalandı!
+    .copy-data-error = Kayıt verisi kopyalanamadı
 
-    .confirm-delete = Are you sure? This will irrevocably delete this record and all notes made on it!
+    .confirm-delete = Bu kaydı silmek istediğinizden emin misiniz? Bu kayıt ile notları silinecek ve bu işlem geri alınamayacaktır!
 
-record-note = Add Note
-    .placeholder = Add note here. Click 'Add' above when done!
-    .public-checkbox = Public note
+record-note = Not Ekle
+    .placeholder = Buraya kaydın sahibi oyuncunun görmesi için bir not yaz. Sonra 'Ekle' tuşuna tıkla!
+    .public-checkbox = Herkese açık not
 
-    .submit = Add
+    .submit = Ekle
 
-record-note-listed = Record Note #{ $note-id }
-    .confirm-delete = This action will irrevocably delete this note. Proceed?
+record-note-listed = Kaydın { $note-id }. Notu
+    .confirm-delete = Notu sileceksiniz ve işlem geri alınamayacak. Silmek istediğinizden emin misiniz?
 
-    .author = This note was left by { $author }.
-    .author-submitter = This note was left as a comment by the submitter.
-    .editors = This note was subsequently modified by: { $editors }.
-    .transferred = This note was not originally left on this record.
-    .public = This note is public.
+    .author = Bu not { $author } tarafından bırakıldı.
+    .author-submitter = Bu not, kaydı gönderenden bir yorum.
+    .editors = Bu not sonrasında şu kişiler tarafından düzenlendi: { $editors }.
+    .transferred = Bu not aslında ilk olarak bu kayda bırakılmamıştı.
+    .public = Bu not herkese açıktır.
 
-record-status-filter-panel = Filter
-    .info = Filter by record status
+record-status-filter-panel = Filtrele
+    .info = Kayıt durumu olarak filtrele
 
-record-status-filter-all = All
+record-status-filter-all = Hepsi
 
-record-idsearch-panel = Search record by ID
-    .info = Records can be uniquely identified by ID. Entering a record's ID below will select it on the left (provided the record exists)
-    .id-field = Record ID:
+record-idsearch-panel = Kaydı ID ile arat
+    .info = Her kaydın kendine özgü ID'si vardır. Aşağıda kaydın ID'sini girin.
+    .id-field = Kayıt ID'si:
 
-    .submit = Find by ID
+    .submit = ID ile arat
 
-    .id-validator-valuemissing = Record ID required
+    .id-validator-valuemissing = ID gereklidir
 
-record-playersearch-panel = Filter by player
-    .info = Players can be uniquely identified by name and ID. Entering either in the appropriate place below will filter the view on the left. Reset by clicking "Find ..." when the text field is empty.
+record-playersearch-panel = Oyuncuya göre filtrele
+    .info = Her oyuncunun kendine özgü bir ID'si ve adı vardır. Bunlardan herhangi birini uygun alana yazabilirsiniz.
 
-    .id-field = Player ID:
-    .id-submit = Find by ID
+    .id-field = Oyuncu ID'si:
+    .id-submit = ID ile bul
 
-    .name-field = Player name:
-    .name-submit = Find by name
+    .name-field = Oyuncu adı:
+    .name-submit = İsimle bul
 
 # Record viewer dialogs
-record-videolink-dialog = Change video link
-    .info = Change the video link for this record. Note that as a list mod, you can leave the text field empty to remove the video from this record.
-    .videolink-field = Video link:
+record-videolink-dialog = Video bağlantısını değiştir
+    .info = Bu kaydın video bağlantısını değiştirin. Liste moderatörüyseniz, bu bağlantıyı kaldırmak için alanı boş bırakabilirsiniz.
+    .videolink-field = Video bağlantısı:
 
-    .submit = Edit
+    .submit = Düzenle
 
-    .videolink-validator-typemismatch = Please enter a valid URL
+    .videolink-validator-typemismatch = Lütfen geçerli bir URL girin
 
-record-demon-dialog = Change record demon
-    .info = Change the demon associated with this record. Search up the demon this record should be associated with below. Then click it to modify the record
+record-demon-dialog = Demon'u değiştir
+    .info = Bu kayıtla ilişkilendirilecek demon'u değiştirin. Aşağıdan uygun demon'u arayıp tıklayın.
 
-record-holder-dialog = Change record holder
-    .info = Type the new holder of the record into the text field below. If the player already exists, it will appear as a suggestion below the text field. Then click the button below.
-    .submit = Edit
+record-holder-dialog = Kayıt sahibini değiştir
+    .info = Aşağıdaki alana yeni kayıt sahibini yazın. Eğer oyuncu zaten varsa, altta öneri olarak çıkacaktır. Sonra alttaki butona tıklayın.
+    .submit = Düzenle
 
-record-progress-dialog = Change record progress
-    .info = Change the progress value of this record. Has to be between the demon's record requirement and 100 (inclusive).
-    .progress-field = Progress:
+record-progress-dialog = Kayıt ilerlemesini değiştir
+    .info = Bu kaydın ilerleme yüzdesini değiştirin. Demon'un kayıt gereksinimi ile 100 arasında bir değer olmalıdır.
+    .progress-field = İlerleme:
 
-    .submit = Edit
+    .submit = Düzenle
 
-    .progress-validator-rangeunderflow = Record progress cannot be negative
-    .progress-validator-rangeoverflow = Record progress cannot be larger than 100%
-    .progress-validator-badinput = Record progress must be a valid integer
-    .progress-validator-stepmismatch = Record progress mustn't be a decimal
-    .progress-validator-valuemissing = Please enter a progress value
+    .progress-validator-rangeunderflow = Kayıt ilerlemesi negatif olamaz
+    .progress-validator-rangeoverflow = Kayıt ilerlemesi %100'den fazla olamaz
+    .progress-validator-badinput = Kayıt ilerlemesi geçerli bir tam sayı olmalıdır
+    .progress-validator-stepmismatch = Kayıt ilerlemesi ondalık sayı olamaz
+    .progress-validator-valuemissing = Lütfen bir ilerleme değeri girin
 
-# The giant information box below the record manager, split
-# into different sections here
-#
-# Each section (except .a and .b) will begin with a bolded version of
-# the appropriate record state, or a bolded version of .note for .note-a/b
-# attributes
-#
-record-manager-help = Manage Records
-    .a = Use the list on the left to select records for editing/viewing. Use the panel on the right to filter the record list by status, player, etc.. Clicking the { record-status-filter-all } field at the top allows to filter by demon.
+# Record manager help
+record-manager-help = Kayıtları Yönet
+    .a = Soldaki listeyi kullanarak kayıtları düzenlemek veya görüntülemek için seçin. Sağdaki panelden kayıtları duruma, oyuncuya vs. göre filtreleyin. En üstteki { record-status-filter-all } alanına tıklayarak demon'a göre filtreleyebilirsiniz.
 
-    .b = There are four possible record states a record can be in: { record-rejected }, { record-approved }, { record-submitted } and { record-underconsideration }. For simplicity of explanation we will assume that Bob is a player and Cataclysm is a demon he has a record on.
+    .b = Bir kaydın alabileceği dört farklı durum vardır: { record-rejected }, { record-approved }, { record-submitted } ve { record-underconsideration }. Açıklamaları kolaylaştırmak için Bob'un bir oyuncu, Cataclysm'in ise bir demon olduğunu varsayacağız.
 
-    .rejected = If the record is { record-rejected }, it means that Bob has no other record in other states on Cataclysm and no submissions for Bob on Cataclysm are possible. Conversely, this means if Bob has a record on Catalysm thats not rejected, we immediately know that no rejected record for Bob on Cataclysm exists.
-    Rejecting any record of Bobs on Cataclysm will delete all other records of Bob on Cataclysm to ensure the above uniqueness.
+    .rejected = Kayıt { record-rejected } durumundaysa, Bob'un Cataclysm'de başka bir kaydı yoktur ve yeni bir gönderim yapılamaz. Tersine, Bob'un Cataclysm'de reddedilmemiş bir kaydı varsa, başka bir reddedilmiş kaydının olamayacağını da biliriz.
+    Bob'un Cataclysm'deki herhangi bir kaydını reddetmek, bu demon'daki tüm diğer Bob kayıtlarını siler.
 
-    .approved = If the record is { record-approved }, it means that no submissions with less progress than the { record-approved } record exist or are permitted.
-    Changing a record to { record-approved } will delete all submissions for Bob on Cataclysm with less progress.
+    .approved = Kayıt { record-approved } durumundaysa, bu kayıttan daha düşük ilerlemeye sahip başka bir gönderim mevcut olamaz veya kabul edilmez.
+    Kayıt { record-approved } olarak değiştirildiğinde, Bob'un Cataclysm'deki daha düşük ilerlemeli tüm gönderimleri silinir.
 
-    .submitted = If the record is { record-submitted }, no further constraints on uniqueness are in place. This means that multiple submissions for Bob on Cataclysm are possible, as long as they provide different video links. However, due to the above, all duplicates are deleted as soon as one of the submissions is accepted or rejected.
+    .submitted = Kayıt { record-submitted } durumundaysa, eşsizliği kısıtlayan herhangi bir kural yoktur. Bob'un Cataclysm için birden fazla gönderimi olabilir; yeter ki her birinin video bağlantısı farklı olsun. Ancak, yukarıda açıklandığı gibi, biri kabul ya da reddedildiğinde diğer tüm kopyalar silinir.
 
-    .underconsideration = If the record is { record-underconsideration } it is conceptually still a submission. The only difference is, that no more submissions for Bob on Cataclysm are allowed now.
+    .underconsideration = Kayıt { record-underconsideration } durumundaysa, konsept olarak hâlâ bir gönderimdir. Tek fark, artık Bob'un Cataclysm için başka bir gönderim yapamayacak olmasıdır.
 
-    .note = Note
+    .note = Not
 
-    .note-a = If a player is banned, they cannot have { record-approved }/{ record-submitted } records on the list. All records marked as { record-submitted } are deleted, all others are changed to { record-rejected }.
+    .note-a = Bir oyuncu banlıysa, { record-approved }/{ record-submitted } durumundaki kayıtları listede bulunamaz. Tüm { record-submitted } kayıtlar silinir, diğerleri ise { record-rejected } durumuna getirilir.
 
-    .note-b = Banning a submitter will delete all their submissions that still have the status { record-submitted }. Records submitted by them that were already { record-approved }/{ record-rejected } will not be affected.
+    .note-b = Bir gönderici banlandığında, hâlâ { record-submitted } durumunda olan tüm kayıtları silinir. Zaten { record-approved }/{ record-rejected } olanlar etkilenmez.
