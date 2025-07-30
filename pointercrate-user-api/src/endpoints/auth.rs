@@ -36,6 +36,11 @@ pub async fn register(
 
     let ip = real_ip.0;
 
+    log::info!("User with the name of {} and the IP of {} is trying to register", 
+        body.name,
+        ip,
+    );
+
     let mut connection = pool.transaction().await.map_err(UserError::from)?;
 
     ratelimits.soft_registrations(ip)?;

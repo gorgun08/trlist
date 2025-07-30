@@ -1,3 +1,5 @@
+#[cfg(feature = "legacy_accounts")]
+use crate::ip_extractor::RealIp;
 use crate::{auth::Auth, ratelimits::UserRatelimits};
 use pointercrate_core::permission::PermissionsManager;
 use pointercrate_core_api::response::Page;
@@ -82,10 +84,16 @@ pub async fn register_page() -> Page {
 #[localized]
 #[rocket::post("/register", data = "<registration>")]
 pub async fn register(
-    ip: IpAddr, ratelimits: &State<UserRatelimits>, cookies: &CookieJar<'_>, registration: Json<Registration>,
+    real_ip: RealIp, ratelimits: &State<UserRatelimits>, cookies: &CookieJar<'_>, registration: Json<Registration>,
     pool: &State<PointercratePool>,
 ) -> pointercrate_core_api::error::Result<Status> {
     let mut connection = pool.transaction().await.map_err(UserError::from)?;
+    let ip = real_ip.0;
+
+    log::info!("User with the name of {} and the IP of {} is trying to register", 
+        registration.name,
+        ip,
+    );
 
     ratelimits.soft_registrations(ip)?;
 
