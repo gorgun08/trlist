@@ -378,6 +378,14 @@ export class InteractiveWorldMap {
     }
   }
 
+  hideCountry() {
+    for (let land of this.map.contentDocument.querySelectorAll(
+      ".land-with-states"
+    )) {
+      land.classList.add("country-hidden");
+    }
+  }
+
   // private
 
   _select(clicked, fireEvents = true) {

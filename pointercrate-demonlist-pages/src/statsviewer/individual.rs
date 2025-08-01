@@ -60,7 +60,7 @@ impl IndividualStatsViewer {
                                             (tr("subdivision-panel.info-countries"))
 
                                             span.tooltiptext.fade {
-                                                r#"Argentina, Australia, Brazil, Canada, Chile, Colombia, Finland, France, Germany, Italy, Mexico, Netherlands, Norway, Peru, Poland, Russian Federation, South Korea, Spain, Ukraine, United Kingdom, United States"#
+                                                r#"Argentina, Australia, Brazil, Canada, Chile, Colombia, Finland, France, Germany, Italy, Mexico, Netherlands, Norway, Peru, Poland, Russian Federation, South Korea, Spain, Turkey, Ukraine, United Kingdom, United States"#
                                             }
                                         }
                                     }.into_string()

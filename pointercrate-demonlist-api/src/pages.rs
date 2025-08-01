@@ -237,8 +237,8 @@ fn make_css_rule(code: &str, score: f64, highest_score: f64) -> String {
     format!(
         ".heatmapped #{0}, .heatmapped #{0} > path {{ fill: rgb({1}, {2}, {3}); }}",
         code,
-        0xda as f64 + (0x08 - 0xda) as f64 * (score / highest_score),
-        0xdc as f64 + (0x81 - 0xdc) as f64 * (score / highest_score),
-        0xe0 as f64 + (0xc6 - 0xe0) as f64 * (score / highest_score),
+        0xda as f64 + (0x8d - 0xda) as f64 * (score / highest_score),
+        0xdc as f64 + (0x44 - 0xdc) as f64 * (score / highest_score),
+        0xe0 as f64 + (0x3f - 0xe0) as f64 * (score / highest_score),
     )
 }

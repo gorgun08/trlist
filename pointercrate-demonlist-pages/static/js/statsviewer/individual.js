@@ -162,6 +162,7 @@ class IndividualStatsViewer extends StatsViewer {
 $(window).on("load", function () {
   let map = new InteractiveWorldMap();
   map.showSubdivisions();
+  map.hideCountry();
 
   let subdivisionCheckbox = document.getElementById(
     "show-subdivisions-checkbox"
