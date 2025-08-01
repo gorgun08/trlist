@@ -1,3 +1,4 @@
+use crate::components::support::support_panel;
 use crate::components::P;
 use crate::{
     components::{
@@ -80,7 +81,7 @@ impl OverviewPage {
                 </script>", list_config::list_size(), list_config::extended_list_size())
             ))
             // FIXME: abstract away
-            // link ref = "canonical" href = "https://turklist.com.tr/demonlist/";
+            link ref = "canonical" href = "https://turklist.com.tr/demonlist/";
         }
     }
 
@@ -124,6 +125,7 @@ impl OverviewPage {
                     (submit_panel())
                     (stats_viewer_panel())
                     (super::discord_panel())
+                    (support_panel())
                 }
             }
         }

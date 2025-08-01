@@ -8,6 +8,7 @@ use pointercrate_demonlist::player::DatabasePlayer;
 pub mod submitter;
 pub mod team;
 pub mod time_machine;
+pub mod support;
 
 pub fn demon_dropdown<'a>(dropdown_id: &str, demons: impl Iterator<Item = &'a Demon>) -> Markup {
     html! {

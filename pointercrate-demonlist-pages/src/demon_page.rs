@@ -492,7 +492,7 @@ impl DemonPage {
                                         td.video-link {
                                             @if let Some(ref video) = record.video {
                                                  a.link href = (video) target = "_blank"{
-                                                     (host(video))
+                                                     (host(video).unwrap_or("Unknown"))
                                                  }
                                             }
                                         }
@@ -507,16 +507,18 @@ impl DemonPage {
     }
 }
 
-fn host(video: &str) -> &str {
-    match Url::parse(video).unwrap().domain().unwrap() {
-        "www.youtube.com" => "YouTube",
-        "youtu.be" => "YouTube",
-        "www.twitch.tv" => "Twitch",
+fn host(video: &str) -> Option<&'static str> {
+    let binding = Url::parse(video).ok()?;
+    let domain = binding.domain()?;
+
+    Some(match domain {
+        "www.youtube.com" | "youtube.com" | "youtu.be" => "YouTube",
+        "www.twitch.tv" | "twitch.tv" => "Twitch",
         "everyplay.com" => "Everyplay",
-        "www.bilibili.com" => "Bilibili",
-        "vimeo.com" => "Vimeo",
-        host => panic!("{}", host),
-    }
+        "www.bilibili.com" | "bilibili.com" => "Bilibili",
+        "vimeo.com" | "www.vimeo.com" => "Vimeo",
+        _ => return None,
+    })
 }
 
 fn embed(video: &str) -> Option<String> {
