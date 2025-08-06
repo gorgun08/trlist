@@ -67,13 +67,13 @@ impl IndividualStatsViewer {
                                 )
                             )))
                         }
-                        div.dropdown-menu.js-search #subdivision-dropdown data-default = "None" {
+                        div.dropdown-menu.js-search #subdivision-dropdown data-default = "Yok" {
                             div{
                                 input type="text" style = "cfont-weight: bold;";
                             }
                             div.menu {
                                 ul {
-                                    li.white.hover.underlined data-value = "None" {(tr("subdivision-panel.option-none"))}
+                                    li.white.hover.underlined data-value = "Yok" {(tr("subdivision-panel.option-none"))}
                                 }
                             }
                         }

@@ -273,6 +273,7 @@ export function getSubdivisionFlag(title, countryCode, subdivisionCode) {
 }
 
 export function populateSubdivisionDropdown(dropdown, countryCode) {
+  console.log(countryCode);
   dropdown.clearOptions();
 
   return get("/api/v1/nationalities/" + countryCode + "/subdivisions/").then(

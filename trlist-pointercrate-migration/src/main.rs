@@ -4,6 +4,7 @@ use std::collections::{HashMap, HashSet};
 use std::str::FromStr;
 use std::{path::Path};
 use std::fs;
+use dotenvy::dotenv;
 use pointercrate_demonlist::player::DatabasePlayer;
 use serde::Deserialize;
 use anyhow::{Result};
@@ -99,7 +100,8 @@ fn sort_demons_by_list_order(tsl_demons: &mut Vec<TSLDemonWithFileAndPosition>, 
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    let TSLData { mut demons, list } = import_tsl_data("/app/trlist-pointercrate-migration/tsl_data")?;
+    dotenvy::dotenv().ok();
+    let TSLData { mut demons, list } = import_tsl_data("trlist-pointercrate-migration/tsl_data")?;
 
     filter_demons_by_list(&mut demons, &list);
     sort_demons_by_list_order(&mut demons, &list);

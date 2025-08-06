@@ -97,13 +97,13 @@ impl AccountPageTab for PlayersPage {
                                         p {
                                             (tr("player-nationality.info"))
                                         }
-                                        div.dropdown-menu.js-search #edit-player-nationality data-default = "None" {
+                                        div.dropdown-menu.js-search #edit-player-nationality data-default = "Yok" {
                                             div {
                                                 input type="text" style = "font-weight: bold;";
                                             }
                                             div.menu {
                                                 ul {
-                                                    li.white.hover.underlined data-value = "None" {(tr("player-nationality.none")) }
+                                                    li.white.hover.underlined data-value = "Yok" {(tr("player-nationality.none")) }
                                                     @for nation in nationalities {
                                                         li.white.hover data-value = {(nation.iso_country_code)} data-display = {(nation.nation)} {
                                                             span class = "flag-icon" style={"background-image: url(/static/demonlist/images/flags/" (nation.iso_country_code.to_lowercase()) ".svg"} {}
@@ -124,7 +124,7 @@ impl AccountPageTab for PlayersPage {
                                             (tr("player-subdivision"))
                                         }
                                         br;
-                                        div.dropdown-menu.js-search #edit-player-subdivision data-default = "None" {
+                                        div.dropdown-menu.js-search #edit-player-subdivision data-default = "Yok" {
                                             div{
                                                 input type="text" style = "color: #b9b9b9ff; font-weight: bold;";
                                             }

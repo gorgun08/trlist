@@ -240,6 +240,10 @@ $(window).on("load", function () {
   });
 
   map.addSelectionListener((countryCode, subdivisionCode) => {
+    let subdivisionDropdown = new Dropdown(
+      document.getElementById("subdivision-dropdown")
+    );
+
     populateSubdivisionDropdown(subdivisionDropdown, countryCode).then(() =>
       subdivisionDropdown.selectSilently(subdivisionCode)
     );
@@ -257,10 +261,6 @@ $(window).on("load", function () {
         map.highlightContinent(selected);
       }
     });
-
-    let subdivisionDropdown = new Dropdown(
-      document.getElementById("subdivision-dropdown")
-    );
 
     subdivisionDropdown.addEventListener((selected) => {
       if (selected === "None") {
@@ -291,6 +291,8 @@ $(window).on("load", function () {
     });
 
     map.addSelectionListener((countryCode, subdivisionCode) => {
+      console.log(subdivisionCode);
+      console.log(countryCode);
       populateSubdivisionDropdown(subdivisionDropdown, countryCode).then(() =>
         subdivisionDropdown.selectSilently(subdivisionCode)
       );

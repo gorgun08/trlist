@@ -73,4 +73,4 @@ subdivision-panel = Political Subdivision
     .info = For the { $countries } you can select a state/province from the dropdown below to focus the stats viewer to that state/province.
     .info-countries = following countries
 
-    .option-none = None
+    .option-none = Yok

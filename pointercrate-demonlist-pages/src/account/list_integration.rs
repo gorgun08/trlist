@@ -73,7 +73,7 @@ impl AccountPageTab for ListIntegrationTab {
                                 },
                                 None => {
                                     i {
-                                        "None"
+                                        "Yok"
                                     }
                                 }
                             }

@@ -391,7 +391,7 @@ export class InteractiveWorldMap {
   _select(clicked, fireEvents = true) {
     if (this.isDragging) return;
 
-    if (this.currentlySelected !== undefined)
+    if (this.currentlySelected != null)
       this.currentlySelected.classList.remove("selected");
 
     this.currentlySelected = clicked;
@@ -399,6 +399,9 @@ export class InteractiveWorldMap {
 
     let subdivisionCode = clicked.id.substring(3);
     let countryCode = clicked.id.substring(0, 2);
+
+    console.log(subdivisionCode);
+    console.log(countryCode);
 
     if (fireEvents)
       for (let listener of this.selectionListeners)
@@ -411,7 +414,7 @@ export class InteractiveWorldMap {
   _deselect(fireEvents = true) {
     if (this.isDragging) return;
 
-    if (this.currentlySelected === undefined) return;
+    if (this.currentlySelected == null) return;
 
     this.currentlySelected.classList.remove("selected");
     this.currentlySelected = undefined;
