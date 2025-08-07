@@ -28,6 +28,9 @@ impl Render for RecordSubmitter<'_> {
                     }
                     p.info-red.output {}
                     p.info-green.output {}
+                                        h3 {
+                        (tr("record-submission.not"))
+                    }
                     h3 {
                         (tr("record-submission.demon"))
                     }

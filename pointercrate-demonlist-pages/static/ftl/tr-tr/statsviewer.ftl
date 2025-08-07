@@ -1,4 +1,4 @@
-statsviewer = Stats Viewer
+statsviewer = İstatistikler
     .rank = Türklist rank
     .score = Türklist skoru
     .stats = Türklist statları
@@ -6,7 +6,7 @@ statsviewer = Stats Viewer
 
     .completed = Geçilen demonlar
     .completed-main = Geçilen main list demonları
-    .completed-extended = geçilen extended list demonları
+    .completed-extended = Geçilen extended list demonları
     .completed-legacy = Geçilen legacy list demonları
 
     .created = Yapılan demonlar
@@ -17,16 +17,16 @@ statsviewer = Stats Viewer
     .stats-value = { $main } Main, { $extended } Extended, { $legacy } Legacy
     .value-none = Yok
 
-statsviewer-individual = Individual
+statsviewer-individual = Bireysel
     .welcome = İncelemeye başlamak için soldan bir oyuncunun ismine tıklayın!
 
-    .option-international = International
+    .option-international = Uluslararası
 
-statsviewer-nation = Nations
-    .welcome = Click on a country's name on the left to get started!
+statsviewer-nation = Uluslar
+    .welcome = İncelemeye başlamak için soldan bir ülkenin ismine tıklayın!
 
-    .players = Players
-    .unbeaten = Unbeaten demons
+    .players = Oyuncular
+    .unbeaten = Geçilmeyen demonlar
 
     .created-tooltip = (Co)created by { $players } { $players ->
             [one] player
@@ -43,14 +43,14 @@ statsviewer-nation = Nations
             *[other] players
         } in this country:
 
-demon-sorting-panel = Demon Sorting
-    .info = The order in which completed demons should be listed
+demon-sorting-panel = Demon Sıralaması
+    .info = Geçilen demonların listelenme sırası
 
-    .option-alphabetical = Alphabetical
-    .option-position = Position
+    .option-alphabetical = Alfabetik
+    .option-position = Listteki yerine göre
 
-continent-panel = Continent
-    .info = Select a continent below to focus the stats viewer to that continent. Select 'All' to reset selection.
+continent-panel = Kıta
+    .info = İncelemek istediğiniz kıtayı seçin. Seçiminizi sıfırlamak için "Tümü"ne tıklayın.
 
     .option-all = Tümü
 
@@ -62,15 +62,15 @@ continent-panel = Continent
     .option-southamerica = Güney Amerika
     .option-centralamerica = Orta Amerika
 
-toggle-subdivision-panel = Show Subdivisions
-    .info = Whether the map should display political subdivisions.
+toggle-subdivision-panel = İlleri Göster
+    .info = Mapin illeri gösterip göstermemesini ayarlar
 
-    .option-toggle = Show political subdivisions
+    .option-toggle = İlleri göster
 
 # { $countries } will be replaced with .info-countries, which will be
 # turned into a tooltip listing all of the selectable countries
-subdivision-panel = Political Subdivision
-    .info = For the { $countries } you can select a state/province from the dropdown below to focus the stats viewer to that state/province.
-    .info-countries = following countries
+subdivision-panel = Şehirler
+    .info = Tablonun üstünden Türkiye'yi seçtikten sonra aşağıdan istediğiniz şehri seçip o şehri inceleyebilirsiniz.
+    .info-countries = bu ülkelerden
 
     .option-none = Yok
