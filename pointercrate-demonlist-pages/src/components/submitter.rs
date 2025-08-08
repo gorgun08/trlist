@@ -29,7 +29,15 @@ impl Render for RecordSubmitter<'_> {
                     p.info-red.output {}
                     p.info-green.output {}
                                         h3 {
-                        (tr("record-submission.not"))
+                        (PreEscaped(trp!(
+                            "record-submission.not",
+                            (
+                                "verify-formu",
+                                html! {
+                                    a.link href = "https://forms.gle/AJTdPeQ9y53m2Y2BA" { (tr("record-submission.verify-formu")) }
+                                }.into_string()
+                            )
+                        )))
                     }
                     h3 {
                         (tr("record-submission.demon"))

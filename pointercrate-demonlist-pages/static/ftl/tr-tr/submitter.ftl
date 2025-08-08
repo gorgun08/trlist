@@ -15,7 +15,7 @@ record-submission-panel = Kayıt Atın
 record-submission = Kayıt Formu
     .note = Not
     .not = Eğer geçtiğiniz level listte yoksa kaydınızı { $verify-formu } aracılığıyla atınız.
-    .verify-formu = bu forum
+    .verify-formu = bu form
 
     .demon = Demon
     .demon-info = Sadece ilk {$list-size}'deki demonlar kabul edilir. Legacy demonlar kabul edilmez!
