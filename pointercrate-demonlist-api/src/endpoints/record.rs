@@ -1,6 +1,4 @@
 use crate::ratelimits::DemonlistRatelimits;
-use serde_json::json;
-use reqwest::Client;
 use log::{debug, error, warn};
 use pointercrate_core::{audit::AuditLogEntry, error::CoreError, pool::PointercratePool};
 use pointercrate_core_api::{
@@ -134,7 +132,6 @@ pub async fn submit(
     }
 
     let validated = normalized.validate(&mut connection).await?;
-    let cloned_validated = validated.clone();
 
     if !is_team_member {
         // Check ratelimits before any change is made to the database so that the transaction rollback is

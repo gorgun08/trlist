@@ -1,6 +1,5 @@
 use pointercrate_core_pages::PageFragment;
-use pointercrate_core_pages::head::Head;
-use maud::{html, Markup, PreEscaped};
+use maud::html;
 
 pub fn guidelines() -> PageFragment {
     PageFragment::new(

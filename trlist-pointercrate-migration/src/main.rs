@@ -4,7 +4,6 @@ use std::collections::{HashMap, HashSet};
 use std::str::FromStr;
 use std::{path::Path};
 use std::fs;
-use dotenvy::dotenv;
 use pointercrate_demonlist::player::DatabasePlayer;
 use serde::Deserialize;
 use anyhow::{Result};
@@ -19,7 +18,10 @@ struct TSLDemon {
     creators: Vec<String>,
     verifier: String,
     verification: String,
-    percentToQualify: i16,
+
+    #[serde(rename(deserialize="percentToQualify"))]
+    percent_to_qualify: i16,
+
     records: Option<Vec<TSLRecord>>,
 }
 
@@ -140,7 +142,7 @@ async fn main() -> Result<()> {
         let post_demon = PostDemon::new(
             tsl.name.clone(),
             demon.position,
-            tsl.percentToQualify,
+            tsl.percent_to_qualify,
             tsl.verifier.clone(),
             tsl.author.clone(),
             tsl.creators.clone(),

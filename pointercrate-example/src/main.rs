@@ -4,7 +4,6 @@ use pointercrate_core::pool::PointercratePool;
 use pointercrate_core::{error::CoreError, localization::tr};
 use pointercrate_core_api::{error::ErrorResponder, maintenance::MaintenanceFairing, preferences::PreferenceManager};
 use pointercrate_core_macros::localized_catcher;
-use pointercrate_core_pages::head::HeadLike;
 use rocket::Config;
 use pointercrate_core_pages::{
     footer::{Footer, FooterColumn, Link},
@@ -84,7 +83,7 @@ async fn rocket() -> _ {
     // Initialize a database connection pool to the database specified by the
     // DATABASE_URL environment variable
     let pool = PointercratePool::init().await;
-    sqlx::migrate!("../migrations").run(&pool.clone_inner()).await;
+    let _ = sqlx::migrate!("../migrations").run(&pool.clone_inner()).await.ok();
 
     let config = Config::figment()
     .merge(("address", "0.0.0.0"))
