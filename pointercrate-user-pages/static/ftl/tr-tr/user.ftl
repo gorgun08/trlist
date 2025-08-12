@@ -84,7 +84,7 @@ profile-username = Kullanıcı Adı
     .info = Türklist'e kayıtlı olduğunuz ve giriş yapmak için kullandığınız isim. Bu isim hesabınıza özgüdür ve değiştirilemez.
 
 profile-display-name = Görünen Ad
-    .info = Düzenlediğiniz takdirde kullanıcı adınız yerine bu ad gözükücektir. Görünen adlar hesaba özgü değildir ve türklist hesabına giriş yapmak için kullanılamaz.
+    .info = Düzenlediğiniz takdirde kullanıcı adınız yerine bu ad gözükücektir. Unutmayın ki bu sadece hesap sayfasında gözükür ve oyuncu sıralamasındaki isminiz değişmez. Eğer oyuncu sıralamasındaki isminizi değiştirmek istiyorsanız, Türklist Discord Sunucusunda #player-talep kanalından yapabilirsiniz.
 
     .dialog-header = Görünen Adı Düzenle
     .dialog-newname = Yeni görünen ad:
