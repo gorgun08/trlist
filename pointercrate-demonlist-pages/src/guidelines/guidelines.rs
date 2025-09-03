@@ -36,9 +36,9 @@ pub fn guidelines() -> PageFragment {
                 }
                 "Raw footage'ınızda mikrofon sesleri izole olarak ayrı bir track'de olmalıdır! Nasıl yapıldığını bilmiyorsanız "
                 a.link href="https://youtu.be/YNlRUVk3oE8?feature=shared" {
-                    "Pointercrate tarafından yapılan "
+                    "Pointercrate tarafından yapılan bu kılavuza"
                 }
-                "bu kılavuza bakabilirsiniz. "
+                " bakabilirsiniz. "
                 strong {
                     "Raw footage sadece Google Drive'dan paylaşılmalıdır!"
                 }

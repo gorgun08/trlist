@@ -124,13 +124,13 @@ impl AccountPageTab for PlayersPage {
                                             (tr("player-subdivision"))
                                         }
                                         br;
-                                        div.dropdown-menu.js-search #edit-player-subdivision data-default = "Yok" {
+                                        div.dropdown-menu.js-search #edit-player-subdivision data-default = "None" {
                                             div{
                                                 input type="text" style = "color: #b9b9b9ff; font-weight: bold;";
                                             }
                                             div.menu {
                                                 ul {
-                                                    li.white.hover.underlined data-value = "Yok" {(tr("player-subdivision.none")) }
+                                                    li.white.hover.underlined data-value = "None" {(tr("player-subdivision.none")) }
                                                 }
                                             }
                                         }
