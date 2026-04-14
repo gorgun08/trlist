@@ -5,7 +5,7 @@ use serde::{de::Error, Deserialize, Serialize};
 use sqlx::PgConnection;
 
 /// The maximal number of entries that can be requested per page via the `limit` parameter.
-pub const ENTRIES_PER_PAGE: i32 = 100;
+pub const ENTRIES_PER_PAGE: i32 = 150;
 
 /// The default number of entries returned per page if the `limit` parameter was omited.
 ///
