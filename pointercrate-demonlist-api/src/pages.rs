@@ -230,15 +230,14 @@ pub async fn heatmap_css(pool: &State<PointercratePool>) -> Result<Response2<Str
 }
 
 fn make_css_rule(code: &str, score: f64, highest_score: f64) -> String {
-    // Artificially adjust the highest score so that score/high_score is never 1. If it were 1, the resulting
-    // color will be equal to the "hover"/"selected" color, which looks bad.
-    let highest_score = highest_score * 0.5;
+    let highest_score = highest_score * 0.60;
+    let ratio = (score / highest_score).min(1.0).powf(0.75); // curve pushes lower scores up
 
     format!(
         ".heatmapped #{0}, .heatmapped #{0} > path {{ fill: rgb({1}, {2}, {3}); }}",
         code,
-        0xda as f64 + (0x8d - 0xda) as f64 * (score / highest_score),
-        0xdc as f64 + (0x44 - 0xdc) as f64 * (score / highest_score),
-        0xe0 as f64 + (0x3f - 0xe0) as f64 * (score / highest_score),
+        0xc8 as f64 + (0x7a - 0xc8) as f64 * ratio,
+        0xca as f64 + (0x28 - 0xca) as f64 * ratio,
+        0xce as f64 + (0x25 - 0xce) as f64 * ratio,
     )
 }

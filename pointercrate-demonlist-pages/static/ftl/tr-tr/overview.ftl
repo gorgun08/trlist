@@ -1,5 +1,5 @@
 main-list = Main List
-    .info = Türklist'in ana kısmı. Bu kısım Türk oyuncular tarafından geçilen en zor 50 demonu kapsar. En fazla puanı bu kısımdaki kabul edilen kayıtlar verir!
+    .info = Türklist'in ana kısmı. Bu kısım Türk oyuncular tarafından geçilen en zor 75 demonu kapsar. En fazla puanı bu kısımdaki kabul edilen kayıtlar verir!
 
 extended-list = Extended List
     .info = Bu kısım main liste giremeyen levelleri kapsar. Bu bölümde sadece 100% yapılan kayıtlar kabul edilir! Level extendeda düşmeden önceki 100% altı kayıtlar kalmaya devam edecektir.
