@@ -21,11 +21,13 @@ import { tr, trp } from "/static/core/js/modules/localization.js";
 
 export function embedVideo(video) {
   if (!video) return;
-  // welcome to incredibly fragile string parsing with stadust
-  // see pointercrate::video::embed for a proper implementation of this
 
-  if (video.startsWith("https://www.youtube")) {
-    return "https://www.youtube.com/embed/" + video.substring(32);
+  if (video.startsWith("https://www.youtube") || video.startsWith("https://youtu.be")) {
+    try {
+      const url = new URL(video);
+      const videoId = url.searchParams.get("v") || url.pathname.slice(1);
+      if (videoId) return "https://www.youtube.com/embed/" + videoId;
+    } catch (e) {}
   }
 
   if (video.startsWith("https://www.twitch")) {
