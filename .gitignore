@@ -10,3 +10,5 @@ eslint.config.mjs
 package-lock.json
 package.json
 *.dump
+docker-compose.yml
+init.sql
