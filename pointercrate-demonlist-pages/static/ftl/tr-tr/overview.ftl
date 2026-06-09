@@ -13,7 +13,7 @@ demon-info = { $publisher } tarafından yayınlandı
 
 ## Time machine
 time-machine = Zaman Makinesi
-    .info = Aşağıya Türklist'i görmek istediğiniz tarihi girin. Bu siteye 28.07.2025 geçtiğimizden dolayı gözlemleyebileceğiniz en eski tarih budur. Sitenin daha önceki yıllardaki durumunu görmek için github sayfasına bakabilirsiniz.
+    .info = Aşağıya Türklist'i görmek istediğiniz tarihi girin. Bu siteye 30.07.2025 geçtiğimizden dolayı gözlemleyebileceğiniz en eski tarih budur. Sitenin daha önceki yıllardaki durumunu görmek için github sayfasına bakabilirsiniz.
 
     .destination-field = Tarih:
     .submit = Başla!

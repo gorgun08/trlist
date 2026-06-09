@@ -312,9 +312,9 @@ impl DemonPage {
                     }
                 }
                 @if let Some(ref video) = self.data.demon.video {
-                    @if let Some(embedded_video) = embed(video) {
-                        div."ratio-16-9" style={"position:relative; background-image: url('" (self.data.demon.thumbnail) "'); background-size: cover; background-position: center;"} {
-                            iframe style="position:absolute; top:0; left:0; width:100%; height:100%;" src=(embedded_video) allowfullscreen="" {}
+                    a."ratio-16-9" href=(video) target="_blank" style={"display:block; background-image: url('" (self.data.demon.thumbnail) "'); background-size: cover; background-position: center; position: relative;"} {
+                        div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:64px; color:white; opacity:0.85;" {
+                            "▶"
                         }
                     }
                 }
@@ -521,28 +521,4 @@ fn host(video: &str) -> Option<&'static str> {
         "vimeo.com" | "www.vimeo.com" => "Vimeo",
         _ => return None,
     })
-}
-
-fn embed(video: &str) -> Option<String> {
-    // Video URLs need to be wellformed once we get here!
-    let url = Url::parse(video).unwrap();
-
-    match url.domain()? {
-        "www.youtube.com" => {
-            let video_id = url
-                .query_pairs()
-                .find_map(|(key, value)| if key == "v" { Some(value) } else { None })?;
-
-            Some(format!("https://www.youtube.com/embed/{}", video_id))
-        },
-        "www.twitch.tv" => {
-            // per validation always of the form 'https://www.twitch.tv/videos/[video id]/'
-            let mut url_segment = url.path_segments()?;
-            url_segment.next()?;
-            let video_id = url_segment.next()?;
-
-            Some(format!("https://player.twitch.tv/?video={}&autoplay=false", video_id))
-        },
-        _ => None,
-    }
 }

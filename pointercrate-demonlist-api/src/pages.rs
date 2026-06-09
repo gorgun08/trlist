@@ -38,7 +38,7 @@ pub async fn overview(
     auth: Option<Auth<NonMutating>>,
 ) -> Result<Page> {
     // A few months before pointercrate first went live - definitely the oldest data we have
-    let beginning_of_time = NaiveDate::from_ymd_opt(2017, 1, 4).unwrap().and_hms_opt(0, 0, 0).unwrap();
+    let beginning_of_time = NaiveDate::from_ymd_opt(2025, 7, 30).unwrap().and_hms_opt(0, 0, 0).unwrap();
 
     let mut connection = pool.connection().await?;
 
